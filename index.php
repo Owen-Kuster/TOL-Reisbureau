@@ -1,2 +1,2 @@
 <?php
-include("pages/homePagina/home.php"); 
+include("pages/headerFooter/header.php"); 

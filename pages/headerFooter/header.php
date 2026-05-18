@@ -9,7 +9,7 @@
     <body>
         <header>
             <nav>
-                <img src="assets/img/OG TOL.png" alt="" height="5vw" width="10%">
+                <img src="assets/img/OGTOL.png" alt="" height="100vw" width="20%">
             </nav>
         </header>
     </body>

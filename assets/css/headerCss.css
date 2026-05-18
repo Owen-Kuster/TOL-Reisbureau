@@ -4,8 +4,26 @@
 }
 
 nav {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 7vw;
     background-color: #FFFFFFFF;
     outline: 2px #000 solid;
+}
+
+.headerImage{
+    margin-left: 4vw;
+    width: 33%;
+}
+
+.headerNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.headerProfile{
+    width: 33%;
 }

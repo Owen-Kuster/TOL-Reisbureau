@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: May 18, 2026 at 02:16 PM
+-- Generation Time: May 19, 2026 at 08:42 AM
 -- Server version: 8.4.8
 -- PHP Version: 8.3.30
 
@@ -29,10 +29,24 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `accommodations` (
   `AccommodationID` int NOT NULL,
-  `Name` varchar(250) NOT NULL,
-  `Place` varchar(250) NOT NULL,
-  `Discription` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `Stars` int NOT NULL
+  `AccommodationName` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `AccommodationPlace` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `AccommodationDiscription` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `AccommodationStars` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `ContactID` int NOT NULL,
+  `ContactName` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `ContactEmail` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `ContactSubject` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `ContactMessage` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -43,12 +57,25 @@ CREATE TABLE `accommodations` (
 
 CREATE TABLE `flights` (
   `FlightID` int NOT NULL,
-  `Departure` varchar(250) NOT NULL,
-  `Destination` varchar(250) NOT NULL,
-  `AvailableSeats` int NOT NULL,
-  `DepartureTime` datetime NOT NULL,
-  `ArrivalTime` datetime NOT NULL,
-  `Price` int NOT NULL
+  `FlightDeparture` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `FlightDestination` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `FlightAvailableSeats` int NOT NULL,
+  `FlightDepartureTime` datetime NOT NULL,
+  `FlightArrivalTime` datetime NOT NULL,
+  `FlightPrice` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `review`
+--
+
+CREATE TABLE `review` (
+  `ReviewID` int NOT NULL,
+  `UserID` int NOT NULL,
+  `ReviewStars` int NOT NULL,
+  `ReviewMessage` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -61,11 +88,11 @@ CREATE TABLE `trip` (
   `TripID` int NOT NULL,
   `FlightID` int NOT NULL,
   `AccommodationID` int NOT NULL,
-  `Destination` varchar(250) NOT NULL,
-  `Departure` varchar(250) NOT NULL,
-  `Price` int NOT NULL,
-  `StartDate` date NOT NULL,
-  `EndDate` date NOT NULL
+  `TripDestination` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `TripDeparture` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `TripPrice` int NOT NULL,
+  `TripStartDate` date NOT NULL,
+  `TripEndDate` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -92,10 +119,22 @@ ALTER TABLE `accommodations`
   ADD PRIMARY KEY (`AccommodationID`);
 
 --
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`ContactID`);
+
+--
 -- Indexes for table `flights`
 --
 ALTER TABLE `flights`
   ADD PRIMARY KEY (`FlightID`);
+
+--
+-- Indexes for table `review`
+--
+ALTER TABLE `review`
+  ADD PRIMARY KEY (`ReviewID`);
 
 --
 -- Indexes for table `trip`
@@ -120,10 +159,22 @@ ALTER TABLE `accommodations`
   MODIFY `AccommodationID` int NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `ContactID` int NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `flights`
 --
 ALTER TABLE `flights`
   MODIFY `FlightID` int NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `review`
+--
+ALTER TABLE `review`
+  MODIFY `ReviewID` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `trip`

@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bubble {
+    background-color: #A2ECFF;
+    height: 60vh;
+    width: 35%;
+    border-radius: 20px;
+    padding-top: 10px;
+}

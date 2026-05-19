@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: May 19, 2026 at 09:23 AM
+-- Generation Time: May 19, 2026 at 09:38 AM
 -- Server version: 8.4.8
 -- PHP Version: 8.3.30
 
@@ -135,13 +135,16 @@ ALTER TABLE `flights`
 -- Indexes for table `review`
 --
 ALTER TABLE `review`
-  ADD PRIMARY KEY (`ReviewID`);
+  ADD PRIMARY KEY (`ReviewID`),
+  ADD KEY `fk_userid_review` (`UserID`);
 
 --
 -- Indexes for table `trip`
 --
 ALTER TABLE `trip`
-  ADD PRIMARY KEY (`TripID`);
+  ADD PRIMARY KEY (`TripID`),
+  ADD KEY `fk_trip_flights` (`FlightID`),
+  ADD KEY `fk_accommodation_trip` (`AccommodationID`);
 
 --
 -- Indexes for table `users`
@@ -188,6 +191,23 @@ ALTER TABLE `trip`
 --
 ALTER TABLE `users`
   MODIFY `UserID` int NOT NULL AUTO_INCREMENT;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `review`
+--
+ALTER TABLE `review`
+  ADD CONSTRAINT `fk_userid_review` FOREIGN KEY (`UserID`) REFERENCES `users` (`UserID`);
+
+--
+-- Constraints for table `trip`
+--
+ALTER TABLE `trip`
+  ADD CONSTRAINT `fk_accommodation_trip` FOREIGN KEY (`AccommodationID`) REFERENCES `accommodations` (`AccommodationID`),
+  ADD CONSTRAINT `fk_trip_flights` FOREIGN KEY (`FlightID`) REFERENCES `flights` (`FlightID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

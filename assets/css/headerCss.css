@@ -1,9 +1,15 @@
+@font-face {
+    font-family: 'Instrument_Serif';
+    src: url('../path-to-your-font/Instrument_Serif.woff2') format('woff2'),
+         url('../path-to-your-font/Instrument_Serif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     padding: 0;
     margin: 0;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 
 .font-instrument {
     font-family: 'Instrument_Serif', serif;
@@ -20,6 +26,7 @@ nav {
 nav a {
     text-decoration: none;
     color: #000;
+    font-size: 1.3vw;
 }
 
 .headerImage {

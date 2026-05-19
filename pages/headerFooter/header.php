@@ -11,7 +11,7 @@
             <a href="#contact">Contact</a>
         </div>
         <div class="headerProfile">
-            <img src="../../../assets/img/ProfilePictureNoLogin.png" alt="profilePicture" height="30vw" width="30%">
+            <img src="../../assets/img/ProfilePictureNoLogin.png" alt="profilePicture" height="30vw" width="30%">
         </div>
     </nav>
 </header>

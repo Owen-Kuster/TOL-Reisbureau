@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: May 19, 2026 at 08:42 AM
+-- Generation Time: May 19, 2026 at 09:23 AM
 -- Server version: 8.4.8
 -- PHP Version: 8.3.30
 
@@ -31,6 +31,7 @@ CREATE TABLE `accommodations` (
   `AccommodationID` int NOT NULL,
   `AccommodationName` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `AccommodationPlace` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `AccommodationPrice` double NOT NULL,
   `AccommodationDiscription` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `AccommodationStars` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -62,7 +63,7 @@ CREATE TABLE `flights` (
   `FlightAvailableSeats` int NOT NULL,
   `FlightDepartureTime` datetime NOT NULL,
   `FlightArrivalTime` datetime NOT NULL,
-  `FlightPrice` int NOT NULL
+  `FlightPrice` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -90,7 +91,7 @@ CREATE TABLE `trip` (
   `AccommodationID` int NOT NULL,
   `TripDestination` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `TripDeparture` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `TripPrice` int NOT NULL,
+  `TripPrice` double NOT NULL,
   `TripStartDate` date NOT NULL,
   `TripEndDate` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

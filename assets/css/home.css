@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-weight: 100;
 }
 
 .test{
@@ -12,7 +13,12 @@
   display: inline-block;
 }
 
-.search-box {
+.travel-search-box {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1vw;
   position: absolute;
   height: 3vw;
   width: 70%;
@@ -21,5 +27,130 @@
   transform: translate(-50%, -50%);
   background-color: #FFFFFF;
   padding: 20px;
+  padding-bottom: 15px;
   border-radius: 10px;
+  color: #7F7F7F;
+}
+
+.departure-box-search{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: auto;
+  height: auto;
+}
+
+.departure{
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 25px;
+  outline: #7F7F7F solid 1px;
+  border-radius: 7px;
+  padding-left: 3px;
+}
+
+.destination-box-search{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: auto;
+  height: auto;
+}
+
+.destination{
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 25px;
+  outline: #7F7F7F solid 1px;
+  border-radius: 7px;
+  padding-left: 3px;
+}
+
+.hotel-box-search{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: auto;
+  height: auto;
+}
+
+.hotel{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: auto;
+  height: 25px;
+  outline: #7F7F7F solid 1px;
+  border-radius: 7px;
+  padding-left: 3px;
+}
+
+.departure-date-box-search{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: auto;
+  height: auto;
+}
+
+.departure-date{
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 25px;
+  outline: #7F7F7F solid 1px;
+  border-radius: 7px;
+  padding-left: 3px;
+}
+
+.return-date-box-search{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: auto;
+  height: auto;
+}
+
+.return-date{
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 25px;
+  outline: #7F7F7F solid 1px;
+  border-radius: 7px;
+  padding-left: 3px;
+}
+
+.people-box-search{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: auto;
+  height: auto;
+}
+
+.people{
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 25px;
+  outline: #7F7F7F solid 1px;
+  border-radius: 7px;
+
+}
+
+.box-search{
+  display: flex;
+  width: auto;
+  height: 15px;
+  padding: 10px;
+  align-self: center;
+  align-items: center;
+  justify-items: center;
+  background-color: #A2ECFF;
+  border-radius: 15px;
+  color: #000;
+  outline: 2px solid #4E148C;
 }

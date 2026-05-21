@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0; outline: 2px solid red;}
+*{margin: 0; padding: 0;}
 
 nav a {
     text-decoration: none;
@@ -14,6 +14,7 @@ nav a {
 
 /** background color */
 .bg-color-white{background-color: #FFFFFFFF;}
+.bg-color-blue{background-color: #A2ECFF;}
 
 /** font */
 .font-instrument {
@@ -34,6 +35,12 @@ nav {
 }
 
 .logoutButtonBox {
-    width: 60%;
-    padding: 0px 0px;
+    width: 59.5%;
+    height: 7vw;
+}
+
+.logoutButton{
+    padding: 0.5vw 1vw;
+    border-radius: 10px;
+    outline: #4E148C solid 2px;
 }

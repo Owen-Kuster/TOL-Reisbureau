@@ -8,14 +8,36 @@ header{scroll-behavior: smooth;}
 .flex-justify-content-end{display: flex; justify-content: flex-end;}
 .flex-justify-content-center{display: flex; justify-content: center;}
 .flex-align-self-center{display: flex; align-self: center;}
+.flex-column{display: flex; flex-direction: column;}
+
+/** font style **/
+.font-style-italic{font-style: italic;}
 
 /** background color */
 .bg-color-white{background-color: #FFFFFFFF;}
 .bg-color-blue{background-color: #A2ECFF;}
 
 /** outline **/
-.outline-purple{outline: #4E148C solid 2px;}
+.outline-purple-2px{outline: #4E148C solid 2px;}
+.outline-purple-4px{outline: #4E148C solid 4px;}
 
 /** border radius **/
 .border-radius-10px{border-radius: 10px;}
+.border-radius-20px{border-radius: 20px;}
 
+/** sections 1 admin message page **/
+.admin-message-section{width: 100%;margin-top: 20px;}
+.messagebox-container{width: auto;height: 100vh;}
+.messagebox-outer-shell{width: 95%;}
+.messagebox-title{width: 95%;}
+
+.messagebox-inner-shell{
+    width: 95%;
+    height: 85vh;
+    margin-top: 20px;
+}
+
+.message-area{
+    width: 97%;
+    height: 80vh;
+}

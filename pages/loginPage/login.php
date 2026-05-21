@@ -33,8 +33,8 @@
             </div>
             <div class="buttons">
                 <button class="button">Login</button>
-                <a class="a" href="#">Password reset</a>
-                <a class="a" href="#">Register</a>
+                <a class="a" href="./passwordReset.php">Password reset</a>
+                <a class="a" href="./register.php">Register</a>
             </div>
         </div>
     </section>

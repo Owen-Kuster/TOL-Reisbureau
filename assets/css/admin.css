@@ -1,4 +1,4 @@
-* {margin: 0; padding: 0; outline: red 2px solid;}
+* {margin: 0; padding: 0; /**outline: red 2px solid;**/}
 
 header{scroll-behavior: smooth;}
 .cursor-pointer{cursor: pointer;}
@@ -33,10 +33,13 @@ header{scroll-behavior: smooth;}
 .bg-color-blue{background-color: #A2ECFF;}
  
 /** outline **/
+.outline-purple-1px{outline: #4E148C solid 1px;}
 .outline-purple-2px{outline: #4E148C solid 2px;}
+.outline-purple-3px{outline: #4E148C solid 3px;}
 .outline-purple-4px{outline: #4E148C solid 4px;}
  
 /** border radius **/
+.border-radius-5px{border-radius: 5px;}
 .border-radius-10px{border-radius: 10px;}
 .border-radius-20px{border-radius: 20px;}
  
@@ -80,4 +83,4 @@ header{scroll-behavior: smooth;}
     letter-spacing: 3px;
 }
  
-.btn-delete:hover {background-color: #fce4e4;}
+.btn-delete:hover {background-color: #ff6c6c;}

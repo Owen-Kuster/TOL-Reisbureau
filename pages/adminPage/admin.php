@@ -19,7 +19,7 @@
     <!-- Section 1 Admin Messages -->
     <section class="admin-message-section">
         <div class="flex-justify-content-center messagebox-container">
-            <div class="bg-color-blue outline-purple-4px border-radius-20px flex-justify-content-center flex-column messagebox-outer-shell">
+            <div class="bg-color-blue outline-purple-3px border-radius-5px flex-justify-content-center flex-column messagebox-outer-shell">
 
                 <div class="flex-align-self-center messagebox-title">
                     <h1 class="font-style-italic">Berichten Box</h1>

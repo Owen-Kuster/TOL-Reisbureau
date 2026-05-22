@@ -41,6 +41,6 @@ nav {
 
 .logoutButton{
     padding: 0.5vw 1vw;
-    border-radius: 10px;
-    outline: #4E148C solid 2px;
+    border-radius: 5px;
+    outline: #4E148C solid 1px;
 }

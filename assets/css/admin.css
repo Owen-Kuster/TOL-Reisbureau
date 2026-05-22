@@ -1,43 +1,83 @@
-*{margin: 0; padding: 0; outline: 2px solid red;}
+* {margin: 0; padding: 0; outline: red 2px solid;}
 
 header{scroll-behavior: smooth;}
-
+.cursor-pointer{cursor: pointer;}
+ 
 /** flex **/
-.flex-align-items-center{display: flex; align-items: center;}
-.flex-row{display: flex; flex-direction: row;}
-.flex-justify-content-end{display: flex; justify-content: flex-end;}
 .flex-justify-content-center{display: flex; justify-content: center;}
-.flex-align-self-center{display: flex; align-self: center;}
+.flex-align-items-center{display: flex; align-items: center;}
+.flex-align-self-center{align-self: center;}
 .flex-column{display: flex; flex-direction: column;}
-
+.flex-row{display: flex; flex-direction: row;}
+.justify-content-space-between{justify-content: space-between;}
+.flex-text-align-center{text-align: center;}
+ 
 /** font style **/
 .font-style-italic{font-style: italic;}
+.font-weight-bold{font-weight: bold;}
+.font-weight-normal{font-weight: normal;}
 
-/** background color */
-.bg-color-white{background-color: #FFFFFFFF;}
+/** font size **/
+.font-size-20px{font-size: 20px;}
+.font-size-13px{font-size: 13px;}
+
+/** color**/
+.color-white{color: #FFFFFF;}
+.color-444{color: #444;}
+.color-222{color: #222;}
+.color-333{color: #333;}
+.color-red{color: #cc0000;}
+
+/** background color **/
+.bg-color-white{background-color: #FFFFFF;}
 .bg-color-blue{background-color: #A2ECFF;}
-
+ 
 /** outline **/
 .outline-purple-2px{outline: #4E148C solid 2px;}
 .outline-purple-4px{outline: #4E148C solid 4px;}
-
+ 
 /** border radius **/
 .border-radius-10px{border-radius: 10px;}
 .border-radius-20px{border-radius: 20px;}
-
+ 
 /** sections 1 admin message page **/
-.admin-message-section{width: 100%;margin-top: 20px;}
-.messagebox-container{width: auto;height: 100vh;}
-.messagebox-outer-shell{width: 95%;}
-.messagebox-title{width: 95%;}
-
+.admin-message-section{width: 100%; margin-top: 20px;}
+.messagebox-container{width: auto; height: 100vh;}
+.messagebox-outer-shell{width: 95%; padding: 20px;}
+.messagebox-title{width: 95%; margin-bottom: 10px;}
+ 
 .messagebox-inner-shell{
     width: 95%;
     height: 85vh;
     margin-top: 20px;
 }
-
-.message-area{
-    width: 97%;
-    height: 80vh;
+ 
+.message-area{width: 97%; height: 80vh;}
+.recieving-message-area{gap: 2%; height: 100%;}
+ 
+.message-recieving-box{
+    width: 32%;
+    height: 76vh;
+    padding: 16px;
 }
+
+.msg-field{height: 2vh;}
+.message-recieving-box .msg-fields{gap: 20px;}
+ 
+.msg-body{
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.6;
+    flex-grow: 1;
+    padding-top: 4px;
+}
+ 
+/** DELETE knop **/
+.btn-delete {
+    width: 60%;
+    margin: 14px auto 0 auto;
+    padding: 8px 0;
+    letter-spacing: 3px;
+}
+ 
+.btn-delete:hover {background-color: #fce4e4;}

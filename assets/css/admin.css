@@ -1,4 +1,4 @@
-* {margin: 0; padding: 0; /**outline: red 2px solid;**/}
+* {margin: 0; padding: 0; outline: red 2px solid;}
 
 header{scroll-behavior: smooth;}
 .cursor-pointer{cursor: pointer;}
@@ -11,11 +11,13 @@ header{scroll-behavior: smooth;}
 .flex-row{display: flex; flex-direction: row;}
 .justify-content-space-between{justify-content: space-between;}
 .flex-text-align-center{text-align: center;}
+.flex-end{justify-content: flex-end;}
  
 /** font style **/
 .font-style-italic{font-style: italic;}
 .font-weight-bold{font-weight: bold;}
 .font-weight-normal{font-weight: normal;}
+.font-weight-light{font-weight: 300;}
 
 /** font size **/
 .font-size-20px{font-size: 20px;}
@@ -31,6 +33,11 @@ header{scroll-behavior: smooth;}
 /** background color **/
 .bg-color-white{background-color: #FFFFFF;}
 .bg-color-blue{background-color: #A2ECFF;}
+.bg-color-cream{background-color: #FAF3E0;}
+.bg-color-purple{background-color: #9B72CF;}
+.bg-color-light-purple{background-color: #bca4ff;}
+.bg-color-red{background-color: #F28B82;}
+.bg-color-lightblue{background-color: #A2ECFF;}
  
 /** outline **/
 .outline-purple-1px{outline: #4E148C solid 1px;}
@@ -42,7 +49,12 @@ header{scroll-behavior: smooth;}
 .border-radius-5px{border-radius: 5px;}
 .border-radius-10px{border-radius: 10px;}
 .border-radius-20px{border-radius: 20px;}
- 
+.border-radius-top-20px{border-radius: 20px 20px 0 0;}
+
+/** top margin **/
+.top-margin-100px{margin-top: 100px;}
+.top-margin-20px{margin-top: 20px;}
+
 /** sections 1 admin message page **/
 .admin-message-section{width: 100%; margin-top: 20px;}
 .messagebox-container{width: auto; height: 100vh;}
@@ -52,7 +64,6 @@ header{scroll-behavior: smooth;}
 .messagebox-inner-shell{
     width: 95%;
     height: 85vh;
-    margin-top: 20px;
 }
  
 .message-area{width: 97%; height: 80vh;}
@@ -84,3 +95,19 @@ header{scroll-behavior: smooth;}
 }
  
 .btn-delete:hover {background-color: #ff6c6c;}
+
+/** sections 2 admin manage flights **/
+.admin-manage-flights{width: 100%;}
+.admin-manage-flights-container{width: 90%;}
+.admin-manage-flights-box{width: 100%; height: 55vh;}
+.admin-manage-flights-header{width: 100%; height: 7vh;} 
+.manage-flights-header-title{padding: 10px 20px;}
+.admin-manage-flights-inner{margin-left: 1%; width: 98%; padding: 20px 0px; gap: 16px;}
+.admin-manage-flights-select-full{width: 95.2%; padding: 10px;}
+.admin-manage-flights-row{width: 100%; gap: 4%; margin-top: 10px;}
+.admin-manage-flights-bottom-row{width: 100%; gap: 4%; margin-top: 10px;}
+.admin-manage-flights-field{width: 48%; gap: 6px;}
+.admin-manage-flights-select{width: 90%; padding: 10px;}
+.admin-manage-flights-actions{width: 43.2%; gap: 16px;}
+.admin-manage-flights-btn-delete{padding: 10px 30px; letter-spacing: 2px;}
+.admin-manage-flights-btn-update{padding: 10px 30px;}

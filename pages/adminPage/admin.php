@@ -72,7 +72,8 @@
             <div class="admin-manage-flights-content">
                 <h1 class="font-style-italic">Manage Flights</h1>
             </div>
-            <div class="top-margin-20px bg-color-cream outline-purple-2px flex-column border-radius-20px admin-manage-flights-box">
+            <div
+                class="top-margin-20px bg-color-cream outline-purple-2px flex-column border-radius-20px admin-manage-flights-box">
                 <div
                     class="bg-color-light-purple flex-align-items-center border-radius-top-20px admin-manage-flights-header">
                     <h1 class="font-weight-light color-white manage-flights-header-title">Manage Flights</h1>
@@ -80,139 +81,148 @@
 
                 <div class="flex-column admin-manage-flights-inner">
 
-                    <p class="font-weight-bold font-size-20px">Kies een vlucht</p>
-                    <select class="outline-purple-1px border-radius-5px admin-manage-flights-select-full">
-                        <option value="">Selecteer een vlucht</option>
-                        <?php //fill with php ?>
-                    </select>
+                    <form action="" method="POST" id="manage-flights">
 
-                    <div class="flex-row admin-manage-flights-row">
-                        <div class="flex-column admin-manage-flights-field">
-                            <p class="font-size-20px">Departure</p>
-                            <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
-                                <option value=""></option>
-                                <?php //fill with php ?>
-                            </select>
-                        </div>
-                        <div class="flex-column admin-manage-flights-field">
-                            <p class="font-size-20px">Destination</p>
-                            <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
-                                <option value=""></option>
-                                <?php //fill with php ?>
-                            </select>
-                        </div>
-                    </div>
+                        <p class="font-weight-bold font-size-20px">Kies een vlucht</p>
+                        <select class="outline-purple-1px border-radius-5px admin-manage-flights-select-full">
+                            <option value="">Selecteer een vlucht</option>
+                            <?php //fill with php ?>
+                        </select>
 
-                    <div class="flex-row admin-manage-flights-row">
-                        <div class="flex-column admin-manage-flights-field">
-                            <p class="font-size-20px">Departure Date</p>
-                            <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
-                                <option value=""></option>
-                                <?php //fill with php ?>
-                            </select>
+                        <div class="flex-row admin-manage-flights-row">
+                            <div class="flex-column admin-manage-flights-field">
+                                <p class="font-size-20px">Departure</p>
+                                <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
+                                    <option value=""></option>
+                                    <?php //fill with php ?>
+                                </select>
+                            </div>
+                            <div class="flex-column admin-manage-flights-field">
+                                <p class="font-size-20px">Destination</p>
+                                <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
+                                    <option value=""></option>
+                                    <?php //fill with php ?>
+                                </select>
+                            </div>
                         </div>
-                        <div class="flex-column admin-manage-flights-field">
-                            <p class="font-size-20px">Return Date</p>
-                            <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
-                                <option value=""></option>
-                                <?php //fill with php ?>
-                            </select>
-                        </div>
-                    </div>
 
-                    <div class="flex-row admin-manage-flights-bottom-row">
-                        <div class="flex-column admin-manage-flights-field">
-                            <p class="font-size-20px">People</p>
-                            <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
-                                <option value=""></option>
-                                <?php //fill with php ?>
-                            </select>
+                        <div class="flex-row admin-manage-flights-row">
+                            <div class="flex-column admin-manage-flights-field">
+                                <p class="font-size-20px">Departure Date</p>
+                                <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
+                                    <option value=""></option>
+                                    <?php //fill with php ?>
+                                </select>
+                            </div>
+                            <div class="flex-column admin-manage-flights-field">
+                                <p class="font-size-20px">Return Date</p>
+                                <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
+                                    <option value=""></option>
+                                    <?php //fill with php ?>
+                                </select>
+                            </div>
                         </div>
-                        <div class="flex-align-items-center justify-content-space-between admin-manage-flights-actions">
-                            <div><button
-                                class="cursor-pointer font-weight-bold font-size-20px border-radius-5px bg-color-red color-white admin-manage-flights-btn-delete">DELETE</button></div>
+
+                        <div class="flex-row admin-manage-flights-bottom-row">
+                            <div class="flex-column admin-manage-flights-field">
+                                <p class="font-size-20px">People</p>
+                                <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
+                                    <option value=""></option>
+                                    <?php //fill with php ?>
+                                </select>
+                            </div>
+                            <div
+                                class="flex-align-items-center justify-content-space-between admin-manage-flights-actions">
                                 <div><button
-                                class="cursor-pointer font-weight-bold font-size-20px border-radius-5px bg-color-lightblue outline-purple-1px admin-manage-flights-btn-update">Update</button></div>
+                                        class="cursor-pointer font-weight-bold font-size-20px border-radius-5px bg-color-red color-white admin-manage-flights-btn-delete">DELETE</button>
+                                </div>
+                                <div><button
+                                        class="cursor-pointer font-weight-bold font-size-20px border-radius-5px bg-color-lightblue outline-purple-1px admin-manage-flights-btn-update">Update</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+
+                    </form>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 2 admin manage flights -->
-    <section class="admin-manage-flights flex-justify-content-center top-margin-100px">
-        <div class="admin-manage-flights-container">
-            <div class="admin-manage-flights-content">
-                <h1 class="font-style-italic">Manage Flights</h1>
+    <!-- Section 3 admin add flights -->
+    <section class="admin-add-flights flex-justify-content-center top-margin-100px">
+        <div class="admin-add-flights-container">
+            <div class="admin-add-flights-content">
+                <h1 class="font-style-italic">Add Flights</h1>
             </div>
-            <div class="top-margin-20px bg-color-cream outline-purple-2px flex-column border-radius-20px admin-manage-flights-box">
+            <div
+                class="top-margin-20px bg-color-cream outline-purple-2px flex-column border-radius-20px admin-add-flights-box">
                 <div
-                    class="bg-color-light-purple flex-align-items-center border-radius-top-20px admin-manage-flights-header">
-                    <h1 class="font-weight-light color-white manage-flights-header-title">Manage Flights</h1>
+                    class="bg-color-light-purple flex-align-items-center border-radius-top-20px admin-add-flights-header">
+                    <h1 class="font-weight-light color-white manage-flights-header-title">Add Flights</h1>
                 </div>
 
-                <div class="flex-column admin-manage-flights-inner">
+                <div class="flex-column admin-add-flights-inner">
 
-                    <p class="font-weight-bold font-size-20px">Kies een vlucht</p>
-                    <select class="outline-purple-1px border-radius-5px admin-manage-flights-select-full">
-                        <option value="">Selecteer een vlucht</option>
-                        <?php //fill with php ?>
-                    </select>
+                    <form action="" method="POST" id="add-flights">
+                        <div class="flex-row admin-add-flights-row">
+                            <div class="flex-column admin-add-flights-field">
+                                <p class="font-size-20px">Departure</p>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
+                                    <option value=""></option>
+                                    <?php //fill with php ?>
+                                </select>
+                            </div>
+                            <div class="flex-column admin-add-flights-field">
+                                <p class="font-size-20px">Destination</p>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
+                                    <option value=""></option>
+                                    <?php //fill with php ?>
+                                </select>
+                            </div>
+                        </div>
 
-                    <div class="flex-row admin-manage-flights-row">
-                        <div class="flex-column admin-manage-flights-field">
-                            <p class="font-size-20px">Departure</p>
-                            <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
-                                <option value=""></option>
-                                <?php //fill with php ?>
-                            </select>
+                        <div class="flex-row admin-add-flights-row">
+                            <div class="flex-column admin-add-flights-field">
+                                <p class="font-size-20px">Departure Date</p>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
+                                    <option value=""></option>
+                                    <?php //fill with php ?>
+                                </select>
+                            </div>
+                            <div class="flex-column admin-add-flights-field">
+                                <p class="font-size-20px">Price</p>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
+                                    <option value=""></option>
+                                    <?php //fill with php ?>
+                                </select>
+                            </div>
                         </div>
-                        <div class="flex-column admin-manage-flights-field">
-                            <p class="font-size-20px">Destination</p>
-                            <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
-                                <option value=""></option>
-                                <?php //fill with php ?>
-                            </select>
-                        </div>
-                    </div>
 
-                    <div class="flex-row admin-manage-flights-row">
-                        <div class="flex-column admin-manage-flights-field">
-                            <p class="font-size-20px">Departure Date</p>
-                            <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
-                                <option value=""></option>
-                                <?php //fill with php ?>
-                            </select>
-                        </div>
-                        <div class="flex-column admin-manage-flights-field">
-                            <p class="font-size-20px">Return Date</p>
-                            <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
-                                <option value=""></option>
-                                <?php //fill with php ?>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="flex-row admin-manage-flights-bottom-row">
-                        <div class="flex-column admin-manage-flights-field">
-                            <p class="font-size-20px">People</p>
-                            <select class="outline-purple-1px border-radius-5px admin-manage-flights-select">
-                                <option value=""></option>
-                                <?php //fill with php ?>
-                            </select>
-                        </div>
-                        <div class="flex-align-items-center justify-content-space-between admin-manage-flights-actions">
-                            <div><button
-                                class="cursor-pointer font-weight-bold font-size-20px border-radius-5px bg-color-red color-white admin-manage-flights-btn-delete">DELETE</button></div>
+                        <div class="flex-row admin-add-flights-bottom-row">
+                            <div class="flex-column admin-add-flights-field">
+                                <p class="font-size-20px">People</p>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
+                                    <option value=""></option>
+                                    <?php //fill with php ?>
+                                </select>
+                            </div>
+                            <div
+                                class="flex-align-items-center justify-content-space-between admin-add-flights-actions">
                                 <div><button
-                                class="cursor-pointer font-weight-bold font-size-20px border-radius-5px bg-color-lightblue outline-purple-1px admin-manage-flights-btn-update">Update</button></div>
+                                        class="cursor-pointer font-weight-bold font-size-20px border-radius-5px bg-color-lightblue outline-purple-1px admin-add-flights-btn-update">Add
+                                        Flight</button></div>
+                            </div>
                         </div>
-                    </div>
+
+                    </form>
+
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="top-margin-100px"></section>
 
 </body>
 

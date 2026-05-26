@@ -1,4 +1,4 @@
-* {margin: 0; padding: 0; outline: red 2px solid;}
+* {margin: 0; padding: 0; /**outline: red 2px solid;**/}
 
 header{scroll-behavior: smooth;}
 .cursor-pointer{cursor: pointer;}
@@ -99,10 +99,17 @@ header{scroll-behavior: smooth;}
 /** sections 2 admin manage flights **/
 .admin-manage-flights{width: 100%;}
 .admin-manage-flights-container{width: 90%;}
-.admin-manage-flights-box{width: 100%; height: 55vh;}
+.admin-manage-flights-box{width: 100%; height: 50vh;}
 .admin-manage-flights-header{width: 100%; height: 7vh;} 
 .manage-flights-header-title{padding: 10px 20px;}
-.admin-manage-flights-inner{margin-left: 1%; width: 98%; padding: 20px 0px; gap: 16px;}
+
+.admin-manage-flights-inner{
+    margin-left: 1%;
+    width: 98%;
+    padding: 20px 0px;
+    gap: 16px;
+}
+
 .admin-manage-flights-select-full{width: 95.2%; padding: 10px;}
 .admin-manage-flights-row{width: 100%; gap: 4%; margin-top: 10px;}
 .admin-manage-flights-bottom-row{width: 100%; gap: 4%; margin-top: 10px;}
@@ -111,3 +118,25 @@ header{scroll-behavior: smooth;}
 .admin-manage-flights-actions{width: 43.2%; gap: 16px;}
 .admin-manage-flights-btn-delete{padding: 10px 30px; letter-spacing: 2px;}
 .admin-manage-flights-btn-update{padding: 10px 30px;}
+
+/** sections 3 admin add flight **/
+.admin-add-flights{width: 100%;}
+.admin-add-flights-container{width: 90%;}
+.admin-add-flights-box{width: 100%; height: 43vh;}
+.admin-add-flights-header{width: 100%; height: 7vh;} 
+.manage-flights-header-title{padding: 10px 20px;}
+
+.admin-add-flights-inner{
+    margin-left: 1%;
+    width: 98%;
+    padding: 20px 0px;
+    gap: 16px;
+}
+
+.admin-add-flights-select-full{width: 95.2%; padding: 10px;}
+.admin-add-flights-row{width: 100%; gap: 4%; margin-top: 10px;}
+.admin-add-flights-bottom-row{width: 100%; gap: 4%; margin-top: 10px;}
+.admin-add-flights-field{width: 48%; gap: 6px;}
+.admin-add-flights-select{width: 90%; padding: 10px;}
+.admin-add-flights-actions{width: 43.2%; gap: 16px;}
+.admin-add-flights-btn-update{padding: 10px 30px;}

@@ -222,7 +222,38 @@
         </div>
     </section>
 
-    <section class="top-margin-100px"></section>
+    <section class="flex-justify-content-center top-margin-100px admin-booked-flights">
+        <div class="admin-booked-flights-container">
+            <div class="admin-booked-flights-content">
+                <h1 class="font-style-italic">Booked Flights</h1>
+            </div>
+            <div
+                class="top-margin-20px bg-color-cream outline-purple-2px flex-column border-radius-20px admin-booked-flights-outer">
+                <div
+                    class="bg-color-light-purple flex-align-items-center border-radius-top-20px admin-booked-flights-header">
+                    <h1 class="font-weight-light color-white booked-flights-header-title">Booked Flights</h1>
+                </div>
+
+                <div class="flex-column flex-justify-content-center admin-booked-flights-inner">
+                    <div class="flex-column admin-booked-flights-column">
+
+                        <?php //foreach ?>
+
+                        <div class="flex-column flex-justify-content-center admin-booked-flights-field">
+                            <div class="bg-color-white outline-purple-1px border-radius-5px admin-booked-flights-box">
+                                <?php //fill with php ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="top-margin-100px">
+
+    </section>
 
 </body>
 

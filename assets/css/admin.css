@@ -1,4 +1,4 @@
-* {margin: 0; padding: 0; /**outline: red 2px solid;**/}
+* {margin: 0; padding: 0; outline: red 2px solid;}
 
 header{scroll-behavior: smooth;}
 .cursor-pointer{cursor: pointer;}
@@ -140,3 +140,33 @@ header{scroll-behavior: smooth;}
 .admin-add-flights-select{width: 90%; padding: 10px;}
 .admin-add-flights-actions{width: 43.2%; gap: 16px;}
 .admin-add-flights-btn-update{padding: 10px 30px;}
+
+/** section 4 admin booked flights **/
+.admin-booked-flights{width: 100%;}
+.admin-booked-flights-container{width: 90%;}
+.admin-booked-flights-header{width: 100%; height: 7vh;} 
+.booked-flights-header-title{padding: 10px 20px;}
+
+.admin-booked-flights-inner{
+    margin-left: 1%;
+    width: 98%;
+    padding: 20px 0px;
+    gap: 16px;
+}
+
+.admin-booked-flights-column{width: 100%;}
+
+.admin-booked-flights-field {
+    width: 100%; 
+    height: 12vh;
+}
+
+.admin-booked-flights-box {
+    width: 100%;
+    height: 10vh;
+}
+
+.admin-booked-flights-outer {
+    width: 100%;
+    height: 70vh;
+}

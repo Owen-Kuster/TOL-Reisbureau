@@ -81,7 +81,11 @@
   margin-left: 8px;
 }
 
-/* ── Wrapper ── */
+/* - beoordelingspagina - */
+.beoordelingspagina {
+  height: 400px;
+}
+
 .reviews-section {
   width: 100%;
   overflow: hidden;
@@ -126,12 +130,11 @@
     transform: translateX(0);
   }
 
-  100% {
-    transform: translateX(-50%);
+  70% {
+    transform: translateX(-20%);
   }
 }
 
-/* ── Individual card ── */
 .review-card {
   width: 240px;
   min-height: 200px;
@@ -174,19 +177,31 @@
   -webkit-text-stroke: 1.5px #1a1a2e;
 }
 
-/* ── "Write a review" link ── */
+/* ─ Write a review" link ─ */
 .write-review-row {
   text-align: right;
   padding: 10px 16px 0;
 }
 
 .write-review-row a {
+  margin-right: 2vw;
   font-size: 14px;
-  color: #1a1a2e;
+  color: black;
   text-decoration: underline;
   font-family: Georgia, serif;
 }
 
 .write-review-row a:hover {
   color: #2d1f6e;
+}
+
+/* ─ aanbiedinspagina ─ */
+.aanbiedingspagina {
+  display: flex;
+  justify-self: center;
+  height: 400px;
+}
+
+.aanbieding-text {
+  font-size: 3vw;
 }

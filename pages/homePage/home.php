@@ -59,7 +59,7 @@
                 <div class="search-field">
                     <label class="label">People</label>
                     <div class="field-input">
-                        <img src="../../assets/img/people.png" alt="" height="13px" width="30px">
+                        <img src="../../assets/img/people.png" alt="" height="17px" width="40px">
                         <input type="number" name="people" min="1" max="99" placeholder="1">
                     </div>
                 </div>
@@ -71,129 +71,147 @@
             </form>
         </section>
 
-        <section class="cointainer2 test">
+        <section class="beoordelingspagina">
 
-            <body>
-
-                <section class="reviews-section">
+                <div class="reviews-section">
                     <div class="reviews-track">
 
                         <?php
-                        /*
-                         * ─────────────────────────────────────────────
-                         *  PHP: haal reviews op uit de database
-                         *  en loop er doorheen met een foreach.
-                         *  Elke review heeft: naam, tekst, rating (1-5)
-                         * ─────────────────────────────────────────────
-                         *
-                         * Voorbeeld:
-                         *   $reviews = getReviewsFromDatabase();
-                         *   foreach ($reviews as $review) {
-                         *     $name   = htmlspecialchars($review['naam']);
-                         *     $text   = htmlspecialchars($review['tekst']);
-                         *     $rating = (int) $review['rating'];
-                         *     // echo de kaart hieronder
-                         *   }
-                         */
+
                         ?>
 
-                        <!-- REVIEW CARD — herhaal dit blok per review vanuit PHP -->
-
                         <div class="review-card">
                             <div>
-                                <p class="reviewer-name">Fatima</p>
-                                <p class="review-text">Alles was goed geregeld, zeker een aanrader voor het hele gezin.
+                                <p class="reviewer-name">
+                                    <?php
+                                    /*-php-*/
+                                    ?>
                                 </p>
-                            </div>
-                            <div class="stars">
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star empty">★</span>
-                            </div>
-                        </div>
-
-                        <!-- ── Duplicaat voor naadloze loop ── -->
-
-                        <div class="review-card">
-                            <div>
-                                <p class="reviewer-name">Ahmad</p>
-                                <p class="review-text">Goede nederlandse service en ik via dit bedrijf naar mijn huis.
-                                </p>
-                            </div>
-                            <div class="stars">
-                                <span class="star">★</span>
-                                <span class="star empty">★</span>
-                                <span class="star empty">★</span>
-                                <span class="star empty">★</span>
-                                <span class="star empty">★</span>
-                            </div>
-                        </div>
-
-                        <div class="review-card">
-                            <div>
-                                <p class="reviewer-name">Piet</p>
-                                <p class="review-text">Geweldig!!!</p>
-                            </div>
-                            <div class="stars">
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                            </div>
-                        </div>
-
-                        <div class="review-card">
-                            <div>
-                                <p class="reviewer-name">Henk</p>
-                                <p class="review-text">Reis liep echt perfect is alleen beetje prijzig.</p>
-                            </div>
-                            <div class="stars">
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star empty">★</span>
-                            </div>
-                        </div>
-
-                        <div class="review-card">
-                            <div>
-                                <p class="reviewer-name">Niggel</p>
-                                <p class="review-text">Geweldig geregeld, ben heel blij hoe mijn reis verlopen is! De
-                                    kinderen vonden het ook super leuk!</p>
-                            </div>
-                            <div class="stars">
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                            </div>
-                        </div>
-
-                        <div class="review-card">
-                            <div>
-                                <h3 class="reviewer-name">Fatima</h3>
-                                <p class="review-text">Alles was goed geregeld, zeker een aanrader voor het hele gezin.
+                                <p class="review-text">
+                                    <?php
+                                    /*-php-*/
+                                    ?>
                                 </p>
                             </div>
                             <div class="stars">
                                 <?php
-                                /*-php*/
+                                /*-php-*/
+                                ?>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div>
+                                <p class="reviewer-name">
+                                    <?php
+                                    /*-php-*/
+                                    ?>
+                                </p>
+                                <p class="review-text">
+                                    <?php
+                                    /*-php-*/
+                                    ?>
+                                </p>
+                            </div>
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div>
+                                <p class="reviewer-name">
+                                    <?php
+                                    /*-php-*/
+                                    ?>
+                                </p>
+                                <p class="review-text">
+                                    <?php
+                                    /*-php-*/
+                                    ?>
+                                </p>
+                            </div>
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div>
+                                <p class="reviewer-name">
+                                    <?php
+                                    /*-php-*/
+                                    ?>
+                                </p>
+                                <p class="review-text">
+                                    <?php
+                                    /*-php-*/
+                                    ?>
+                                </p>
+                            </div>
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div>
+                                <p class="reviewer-name">
+                                    <?php
+                                    /*-php-*/
+                                    ?>
+                                </p>
+                                <p class="review-text">
+                                    <?php
+                                    /*-php-*/
+                                    ?>
+                                </p>
+                            </div>
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div>
+                                <p class="reviewer-name">
+                                    <?php
+                                    /*-php-*/
+                                    ?>
+                                </p>
+                                <p class="review-text">
+                                    <?php
+                                    /*-php-*/
+                                    ?>
+                                </p>
+                            </div>
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
                                 ?>
                             </div>
                         </div>
 
                     </div>
-                </section>
+                </div>
 
                 <div class="write-review-row">
-                    <a href="/review-schrijven">Schrijf een review!</a>
+                    <a href="#review-schrijven">Write a review!</a>
                 </div>
         </section>
+
+        <section class="aanbiedingspagina">
+            <h1 class="aanbieding-text">Sale</h1>
+        </section>
+
     </main>
     <footer></footer>
 </body>

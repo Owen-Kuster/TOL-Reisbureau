@@ -170,3 +170,55 @@ header{scroll-behavior: smooth;}
     width: 100%;
     height: 70vh;
 }
+
+.booked-flight-details-box{
+    width: 100%;
+    height: 10vh;
+    gap: 4px;
+}
+
+.details-box{
+    width: 14%;
+    height: 100%;
+}
+
+/** section 5 admin all flights **/
+.admin-all-flights{width: 100%;}
+.admin-all-flights-container{width: 90%;}
+.admin-all-flights-header{width: 100%; height: 7vh;} 
+.all-flights-header-title{padding: 10px 20px;}
+
+.admin-all-flights-inner{
+    margin-left: 1%;
+    width: 98%;
+    padding: 20px 0px;
+    gap: 16px;
+}
+
+.admin-all-flights-column{width: 100%;}
+
+.admin-all-flights-field {
+    width: 100%; 
+    height: 12vh;
+}
+
+.admin-all-flights-box {
+    width: 100%;
+    height: 10vh;
+}
+
+.admin-all-flights-outer {
+    width: 100%;
+    height: 70vh;
+}
+
+.all-flight-details-box{
+    width: 100%;
+    height: 10vh;
+    gap: 4px;
+}
+
+.all-details-box{
+    width: 14%;
+    height: 100%;
+}

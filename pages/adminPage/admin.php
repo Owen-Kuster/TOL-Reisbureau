@@ -222,6 +222,7 @@
         </div>
     </section>
 
+    <!-- Section 4 admin booked flights -->
     <section class="flex-justify-content-center top-margin-100px admin-booked-flights">
         <div class="admin-booked-flights-container">
             <div class="admin-booked-flights-content">
@@ -240,8 +241,32 @@
                         <?php //foreach ?>
 
                         <div class="flex-column flex-justify-content-center admin-booked-flights-field">
-                            <div class="bg-color-white outline-purple-1px border-radius-5px admin-booked-flights-box">
-                                <?php //fill with php ?>
+                            <div class="bg-color-white outline-purple-1px flex-justify-content-center border-radius-5px admin-booked-flights-box">
+                                <div class="flex-row flex-justify-content-center booked-flight-details-box">
+
+                                    <div class="booked-account-name details-box">
+                                        <?php //fill with php ?>
+                                    </div>
+                                    <div class="booked-hotel-yesno details-box">
+                                        <?php //fill with php ?>
+                                    </div>
+                                    <div class="booked-departure details-box">
+                                        <?php //fill with php ?>
+                                    </div>
+                                    <div class="booked-destination details-box">
+                                        <?php //fill with php ?>
+                                    </div>
+                                    <div class="booked-people details-box">
+                                        <?php //fill with php ?>
+                                    </div>
+                                    <div class="booked-departure-date details-box">
+                                        <?php //fill with php ?>
+                                    </div>
+                                    <div class="booked-return-date details-box">
+                                        <?php //fill with php ?>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -251,8 +276,58 @@
         </div>
     </section>
 
-    <section class="top-margin-100px">
+    <!-- section 5 admin all flights -->
+    <section class="flex-justify-content-center top-margin-100px admin-all-flights">
+        <div class="admin-all-flights-container">
+            <div class="admin-all-flights-content">
+                <h1 class="font-style-italic">All Flights</h1>
+            </div>
+            <div
+                class="top-margin-20px bg-color-cream outline-purple-2px flex-column border-radius-20px admin-all-flights-outer">
+                <div
+                    class="bg-color-light-purple flex-align-items-center border-radius-top-20px admin-all-flights-header">
+                    <h1 class="font-weight-light color-white all-flights-header-title">All Flights</h1>
+                </div>
 
+                <div class="flex-column flex-justify-content-center admin-all-flights-inner">
+                    <div class="flex-column admin-all-flights-column">
+
+                        <?php //foreach ?>
+
+                        <div class="flex-column flex-justify-content-center admin-all-flights-field">
+                            <div class="bg-color-white outline-purple-1px border-radius-5px admin-all-flights-box">
+                               <div class="flex-row flex-justify-content-center all-flight-details-box">
+
+                                    <div class="all-account-name all-details-box">
+                                        <?php //fill with php ?>
+                                    </div>
+                                    <div class="all-hotel-yesno all-details-box">
+                                        <?php //fill with php ?>
+                                    </div>
+                                    <div class="all-departure all-details-box">
+                                        <?php //fill with php ?>
+                                    </div>
+                                    <div class="all-destination all-details-box">
+                                        <?php //fill with php ?>
+                                    </div>
+                                    <div class="all-people all-details-box">
+                                        <?php //fill with php ?>
+                                    </div>
+                                    <div class="all-departure-date all-details-box">
+                                        <?php //fill with php ?>
+                                    </div>
+                                    <div class="all-return-date all-details-box">
+                                        <?php //fill with php ?>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
 </body>

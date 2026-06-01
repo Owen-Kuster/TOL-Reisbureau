@@ -222,7 +222,7 @@
         <section class="aanbiedingpagina">
             <h1 class="aanbieding-text">Sale</h1>
 
-            <div class="aanbieding">
+            <div class="aanbiedingen">
                 <div class="aanbieding-box">
                     <?php
                     /*-php-*/

@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.outward {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 30px;
+    margin-left: 100px;
+    align-self: flex-start;
+}
+
+.travel-search-box {
+  display: flex;
+  align-items: flex-end;
+  width: 80%;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 16px;
+  color: #7f7f7f;
+}
+
+.search-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 16px 0 0;
+  flex: 1;
+}
+
+.label {
+  color: #5a5a5a;
+  padding-left: 4px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  font-size: 1.2vw;
+}
+
+.field-input {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border: 1.5px solid #c0c0c0;
+  border-radius: 30px;
+  padding: 0 14px;
+  gap: 8px;
+}
+
+.field-input:focus-within {
+  border-color: #4e148c;
+}
+
+.field-input input,
+.field-input select {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  color: #3f3f3f;
+  appearance: none;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---- Hotel kaart ---- */
+.placeholder {
+    display: flex;
+    align-items: stretch;
+    width: 60%;
+    margin: 50px;
+    background-color: #97DFFC;
+    outline: #3D0E61 solid 3px;
+}
+
+/* ---- Linker deel: hotel info ---- */
+.hotel-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 75%;
+    padding: 24px 30px;
+}
+
+.hotel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.hotel-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.hotel-stars {
+    font-size: 14px;
+    color: #3D0E61;
+    font-weight: 600;
+}
+
+.hotel-location {
+    font-size: 14px;
+    color: #444;
+}
+
+.hotel-description {
+    font-size: 13px;
+    color: #1a1a1a;
+    line-height: 1.5;
+}
+
+/* ---- Scheidingslijn ---- */
+.hotel-divider {
+    width: 1px;
+    background-color: black;
+    margin: 16px 0;
+}
+
+/* ---- Rechter deel: prijs + boekknop ---- */
+.bookNow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    gap: 12px;
+    padding: 20px;
+}
+
+.hotel-price {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.per-night {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.bookBtn {
+    display: inline-block;
+    background-color: #3D0E61;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.bookBtn:hover {
+    background-color: #ffffff;
+    color: #3D0E61;
+}

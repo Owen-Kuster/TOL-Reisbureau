@@ -1,0 +1,224 @@
+* {margin: 0; padding: 0; outline: red 2px solid;}
+
+header{scroll-behavior: smooth;}
+.cursor-pointer{cursor: pointer;}
+ 
+/** flex **/
+.flex-justify-content-center{display: flex; justify-content: center;}
+.flex-align-items-center{display: flex; align-items: center;}
+.flex-align-self-center{align-self: center;}
+.flex-column{display: flex; flex-direction: column;}
+.flex-row{display: flex; flex-direction: row;}
+.justify-content-space-between{justify-content: space-between;}
+.flex-text-align-center{text-align: center;}
+.flex-end{justify-content: flex-end;}
+ 
+/** font style **/
+.font-style-italic{font-style: italic;}
+.font-weight-bold{font-weight: bold;}
+.font-weight-normal{font-weight: normal;}
+.font-weight-light{font-weight: 300;}
+
+/** font size **/
+.font-size-20px{font-size: 20px;}
+.font-size-13px{font-size: 13px;}
+
+/** color**/
+.color-white{color: #FFFFFF;}
+.color-444{color: #444;}
+.color-222{color: #222;}
+.color-333{color: #333;}
+.color-red{color: #cc0000;}
+
+/** background color **/
+.bg-color-white{background-color: #FFFFFF;}
+.bg-color-blue{background-color: #A2ECFF;}
+.bg-color-cream{background-color: #FAF3E0;}
+.bg-color-purple{background-color: #9B72CF;}
+.bg-color-light-purple{background-color: #bca4ff;}
+.bg-color-red{background-color: #F28B82;}
+.bg-color-lightblue{background-color: #A2ECFF;}
+ 
+/** outline **/
+.outline-purple-1px{outline: #4E148C solid 1px;}
+.outline-purple-2px{outline: #4E148C solid 2px;}
+.outline-purple-3px{outline: #4E148C solid 3px;}
+.outline-purple-4px{outline: #4E148C solid 4px;}
+ 
+/** border radius **/
+.border-radius-5px{border-radius: 5px;}
+.border-radius-10px{border-radius: 10px;}
+.border-radius-20px{border-radius: 20px;}
+.border-radius-top-20px{border-radius: 20px 20px 0 0;}
+
+/** top margin **/
+.top-margin-100px{margin-top: 100px;}
+.top-margin-20px{margin-top: 20px;}
+
+/** sections 1 admin message page **/
+.admin-message-section{width: 100%; margin-top: 20px;}
+.messagebox-container{width: auto; height: 100vh;}
+.messagebox-outer-shell{width: 95%; padding: 20px;}
+.messagebox-title{width: 95%; margin-bottom: 10px;}
+ 
+.messagebox-inner-shell{
+    width: 95%;
+    height: 85vh;
+}
+ 
+.message-area{width: 97%; height: 80vh;}
+.recieving-message-area{gap: 2%; height: 100%;}
+ 
+.message-recieving-box{
+    width: 32%;
+    height: 76vh;
+    padding: 16px;
+}
+
+.msg-field{height: 2vh;}
+.message-recieving-box .msg-fields{gap: 20px;}
+ 
+.msg-body{
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.6;
+    flex-grow: 1;
+    padding-top: 4px;
+}
+ 
+/** DELETE knop **/
+.btn-delete {
+    width: 60%;
+    margin: 14px auto 0 auto;
+    padding: 8px 0;
+    letter-spacing: 3px;
+}
+ 
+.btn-delete:hover {background-color: #ff6c6c;}
+
+/** sections 2 admin manage flights **/
+.admin-manage-flights{width: 100%;}
+.admin-manage-flights-container{width: 90%;}
+.admin-manage-flights-box{width: 100%; height: 50vh;}
+.admin-manage-flights-header{width: 100%; height: 7vh;} 
+.manage-flights-header-title{padding: 10px 20px;}
+
+.admin-manage-flights-inner{
+    margin-left: 1%;
+    width: 98%;
+    padding: 20px 0px;
+    gap: 16px;
+}
+
+.admin-manage-flights-select-full{width: 95.2%; padding: 10px;}
+.admin-manage-flights-row{width: 100%; gap: 4%; margin-top: 10px;}
+.admin-manage-flights-bottom-row{width: 100%; gap: 4%; margin-top: 10px;}
+.admin-manage-flights-field{width: 48%; gap: 6px;}
+.admin-manage-flights-select{width: 90%; padding: 10px;}
+.admin-manage-flights-actions{width: 43.2%; gap: 16px;}
+.admin-manage-flights-btn-delete{padding: 10px 30px; letter-spacing: 2px;}
+.admin-manage-flights-btn-update{padding: 10px 30px;}
+
+/** sections 3 admin add flight **/
+.admin-add-flights{width: 100%;}
+.admin-add-flights-container{width: 90%;}
+.admin-add-flights-box{width: 100%; height: 43vh;}
+.admin-add-flights-header{width: 100%; height: 7vh;} 
+.manage-flights-header-title{padding: 10px 20px;}
+
+.admin-add-flights-inner{
+    margin-left: 1%;
+    width: 98%;
+    padding: 20px 0px;
+    gap: 16px;
+}
+
+.admin-add-flights-select-full{width: 95.2%; padding: 10px;}
+.admin-add-flights-row{width: 100%; gap: 4%; margin-top: 10px;}
+.admin-add-flights-bottom-row{width: 100%; gap: 4%; margin-top: 10px;}
+.admin-add-flights-field{width: 48%; gap: 6px;}
+.admin-add-flights-select{width: 90%; padding: 10px;}
+.admin-add-flights-actions{width: 43.2%; gap: 16px;}
+.admin-add-flights-btn-update{padding: 10px 30px;}
+
+/** section 4 admin booked flights **/
+.admin-booked-flights{width: 100%;}
+.admin-booked-flights-container{width: 90%;}
+.admin-booked-flights-header{width: 100%; height: 7vh;} 
+.booked-flights-header-title{padding: 10px 20px;}
+
+.admin-booked-flights-inner{
+    margin-left: 1%;
+    width: 98%;
+    padding: 20px 0px;
+    gap: 16px;
+}
+
+.admin-booked-flights-column{width: 100%;}
+
+.admin-booked-flights-field {
+    width: 100%; 
+    height: 12vh;
+}
+
+.admin-booked-flights-box {
+    width: 100%;
+    height: 10vh;
+}
+
+.admin-booked-flights-outer {
+    width: 100%;
+    height: 70vh;
+}
+
+.booked-flight-details-box{
+    width: 100%;
+    height: 10vh;
+    gap: 4px;
+}
+
+.details-box{
+    width: 14%;
+    height: 100%;
+}
+
+/** section 5 admin all flights **/
+.admin-all-flights{width: 100%;}
+.admin-all-flights-container{width: 90%;}
+.admin-all-flights-header{width: 100%; height: 7vh;} 
+.all-flights-header-title{padding: 10px 20px;}
+
+.admin-all-flights-inner{
+    margin-left: 1%;
+    width: 98%;
+    padding: 20px 0px;
+    gap: 16px;
+}
+
+.admin-all-flights-column{width: 100%;}
+
+.admin-all-flights-field {
+    width: 100%; 
+    height: 12vh;
+}
+
+.admin-all-flights-box {
+    width: 100%;
+    height: 10vh;
+}
+
+.admin-all-flights-outer {
+    width: 100%;
+    height: 70vh;
+}
+
+.all-flight-details-box{
+    width: 100%;
+    height: 10vh;
+    gap: 4px;
+}
+
+.all-details-box{
+    width: 14%;
+    height: 100%;
+}

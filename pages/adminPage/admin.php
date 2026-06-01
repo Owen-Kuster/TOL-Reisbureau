@@ -42,7 +42,7 @@
                                     <div class="color-222 font-size-20px font-weight-bold msg-field">NAME
                                         <?php //fill php ?>
                                     </div>
-                                    <div class="color-222 font-size-20px font-weight-bold msg-field">DATE
+                                    <div class="color-222 font-size-20px font-weight-bold msg-field">SUBJECT
                                         <?php //fill php ?>
                                     </div>
                                     <div class="color-222 font-size-20px font-weight-bold msg-field">EMAIL

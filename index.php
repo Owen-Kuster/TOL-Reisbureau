@@ -9,9 +9,10 @@
 
 <body>
 <?php
-include("pages/headerFooter/header.php");
-include("pages/homePage/home.php");
-// include("pages/adminPage/admin.php");
+// include("pages/headerFooter/header.php");
+// include("pages/homePage/home.php");
+include("pages/contactPage/contact.php");
+include("pages/adminPage/admin.php");
 // include("pages/headerFooter/footer.php");
 ?>
 </body>

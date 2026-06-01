@@ -14,15 +14,7 @@
 .title {
     margin: 30px;
     margin-left: 100px;
-}
-
-.searchBar {
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    background-color: brown;
-    height: 15vh;
-    width: 100%;
+    align-self: flex-start;
 }
 
 .placeholder {
@@ -34,20 +26,157 @@
     outline: #3D0E61 solid 3px;
 }
 
-.bookNow {
-    display: flex;
-    background-color: #3D0E61;
-    height: 25vh;
-    width: 25%;
-}
-
+/* ---- bubble01: linker deel van de kaart ---- */
 .bubble01 {
     display: flex;
     flex-direction: column;
-    width: 60%;
-}   
+    justify-content: center;
+    width: 75%;
+    padding: 20px 30px;
+    gap: 8px;
+}
 
-.bubble011{
+.bubble011 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+/* Rij met icoontjes + duur */
+.icons-row {
+    margin-bottom: 4px;
+}
+
+.flight-icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.flight-duration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+.icons-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 6px;
+}
+
+/* Rij met tijden en luchthavencodes */
+.times-row {
+    align-items: flex-start;
+}
+
+.flight-point {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flight-point.right {
+    align-items: flex-end;
+}
+
+.time {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.place {
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+/* ---- bookNow: rechter paarse knop ---- */
+.bookNow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    gap: 8px;
+}
+
+.bookBtn {
+    display: inline-block;
+    background-color: #3D0E61;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.bookBtn:hover {
+    background-color: #ffffff;
+    color: #3D0E61;
+}
+
+.seats {
+    font-size: 13px;
+}
+
+.travel-search-box {
+  display: flex;
+  align-items: flex-end;
+  width: 80%;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 16px;
+  color: #7f7f7f;
+}
+
+.search-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 16px 0 0;
+  flex: 1;
+}
+
+.label {
+  color: #5a5a5a;
+  padding-left: 4px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  font-size: 1.2vw;
+}
+
+.field-input {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border: 1.5px solid #c0c0c0;
+  border-radius: 30px;
+  padding: 0 14px;
+  gap: 8px;
+}
+
+.field-input:focus-within {
+  border-color: #4e148c;
+}
+
+.field-input input,
+.field-input select {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  color: #3f3f3f;
+  appearance: none;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
 }

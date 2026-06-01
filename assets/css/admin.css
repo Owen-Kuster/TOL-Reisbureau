@@ -1,4 +1,4 @@
-* {margin: 0; padding: 0; outline: red 2px solid;}
+* {margin: 0; padding: 0; /**outline: red 2px solid;**/}
 
 header{scroll-behavior: smooth;}
 .cursor-pointer{cursor: pointer;}

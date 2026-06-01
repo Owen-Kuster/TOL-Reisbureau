@@ -32,7 +32,7 @@
                         <div class="flex-row recieving-message-area">
 
                             <?php
-                            // foreach
+                                // foreach
                             ?>
 
                             <!-- Messages -->
@@ -58,6 +58,7 @@
                                 <button
                                     class="cursor-pointer flex-text-align-center font-weight-bold font-size-20px border-radius-20px outline-purple-2px bg-color-white color-red btn-delete">DELETE</button>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -269,6 +270,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
 
@@ -323,6 +325,8 @@
                                 </div>
                             </div>
                         </div>
+                        
+
                     </div>
                 </div>
 

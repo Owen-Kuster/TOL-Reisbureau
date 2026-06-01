@@ -52,14 +52,14 @@
                             </div>
                             <div class="flex-column contact-field">
                                 <p class="font-size-20px">Subject</p>
-                                <input class="outline-purple-1px border-radius-5px contact-input" type="text" name="onderwerp" placeholder="Onderwerp"
+                                <input class="outline-purple-1px border-radius-5px contact-input" type="text" name="onderwerp" placeholder="Subject"
                                     <?php //value php ?>>
                             </div>
                         </div>
 
                         <div class="flex-column contact-field-full">
-                            <p class="font-size-20px">Bericht</p>
-                            <textarea class="outline-purple-1px border-radius-5px contact-textarea" name="bericht" placeholder="Uw bericht">
+                            <p class="font-size-20px">Message</p>
+                            <textarea class="outline-purple-1px border-radius-5px contact-textarea" name="bericht" placeholder="Your message">
                                 <?php //fill php ?></textarea>
                         </div>
 

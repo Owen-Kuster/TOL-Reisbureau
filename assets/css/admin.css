@@ -67,7 +67,7 @@ header{scroll-behavior: smooth;}
 }
  
 .message-area{width: 97%; height: 80vh;}
-.recieving-message-area{gap: 2%; height: 100%;}
+.recieving-message-area{gap: 2%; height: auto;}
  
 .message-recieving-box{
     width: 32%;
@@ -152,6 +152,7 @@ header{scroll-behavior: smooth;}
     width: 98%;
     padding: 20px 0px;
     gap: 16px;
+    height: auto;
 }
 
 .admin-booked-flights-column{width: 100%;}
@@ -168,7 +169,8 @@ header{scroll-behavior: smooth;}
 
 .admin-booked-flights-outer {
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
+    height: auto;
 }
 
 .booked-flight-details-box{
@@ -193,6 +195,7 @@ header{scroll-behavior: smooth;}
     width: 98%;
     padding: 20px 0px;
     gap: 16px;
+    height: auto;
 }
 
 .admin-all-flights-column{width: 100%;}
@@ -209,7 +212,8 @@ header{scroll-behavior: smooth;}
 
 .admin-all-flights-outer {
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
+    height: auto;
 }
 
 .all-flight-details-box{

@@ -196,7 +196,7 @@
 }
 
 /* ─ aanbiedinspagina ─ */
-.aanbiedingspagina {
+.aanbiedingpagina {
   display: flex;
   justify-self: center;
   height: 400px;
@@ -204,4 +204,9 @@
 
 .aanbieding-text {
   font-size: 3vw;
+}
+
+.aanbieding-box{
+  width: 40%;
+  display: flex;
 }

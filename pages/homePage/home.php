@@ -9,6 +9,11 @@
 </head>
 
 <body>
+    <header>
+        <?php
+        include(__DIR__ . "/../headerFooter/header.php");
+        ?>
+    </header>
     <main>
         <section class="landingspagina">
             <form class="travel-search-box" action="" method="GET">
@@ -350,7 +355,11 @@
         </section>
 
     </main>
-    <footer></footer>
+    <footer>
+        <?php
+        include(__DIR__ . "/../headerFooter/footer.php");
+        ?>
+    </footer>
 </body>
 
 </html>

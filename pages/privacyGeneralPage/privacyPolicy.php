@@ -74,5 +74,7 @@
         </div>
     </section>
 
+    <footer><?php include(__DIR__ . "/../headerFooter/footer.php"); ?></footer>
+
 </body>
 </html>

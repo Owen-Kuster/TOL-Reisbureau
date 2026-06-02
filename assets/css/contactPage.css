@@ -31,7 +31,7 @@
 
 /** outline **/
 .outline-purple-1px{outline: #4E148C solid 1px;}
-.outline-purple-2px{outline: #4E148C solid 2px;}
+.outline-blue-2pxs{outline: #2c8ca4 solid 2px;}
 
 /** border radius **/
 .border-radius-5px{border-radius: 5px;}
@@ -68,3 +68,5 @@
 
 .contact-actions{width: 100%;}
 .contact-btn-send{padding: 10px 30px; margin-top: 10px;}
+
+.margin-100-bottom{margin-bottom: 100px;}

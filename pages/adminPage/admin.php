@@ -210,9 +210,7 @@
                             </div>
                             <div
                                 class="flex-align-items-center justify-content-space-between admin-add-flights-actions">
-                                <div><button
-                                        class="cursor-pointer font-weight-bold font-size-20px border-radius-5px bg-color-lightblue outline-purple-1px admin-add-flights-btn-update">Add
-                                        Flight</button></div>
+                                <div><button class="cursor-pointer font-weight-bold font-size-20px border-radius-5px bg-color-lightblue outline-purple-1px admin-add-flights-btn-update">Add Flight</button></div>
                             </div>
                         </div>
 
@@ -333,6 +331,8 @@
             </div>
         </div>
     </section>
+
+    <footer><?php include(__DIR__ . "/../headerFooter/footer.php"); ?></footer>
 
 </body>
 

@@ -31,14 +31,14 @@ nav a {
 
 .headerImage {
     margin-left: 4vw;
-    width: 30%;
+    width: 10%;
 }
 
 .headerNav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 50%;
+    width: 70%;
     gap: 5vw;
 }
 

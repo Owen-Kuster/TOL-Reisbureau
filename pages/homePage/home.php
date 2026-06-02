@@ -87,127 +87,239 @@
             <div class="reviews-section">
                 <div class="reviews-track">
 
-                    <?php
+                    <div class="reviews-group">
+                        <div class="review-card">
 
-                    ?>
-
-                    <div class="review-card">
-                        <div>
-                            <p class="reviewer-name">
+                            <h1 class="reviewer-name">
                                 <?php
                                 /*-php-*/
                                 ?>
-                            </p>
-                            <p class="review-text">
+                            </h1>
+
+                            <h4 class="review-text">
                                 <?php
                                 /*-php-*/
                                 ?>
-                            </p>
+                            </h4>
+
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </div>
+
                         </div>
-                        <div class="stars">
-                            <?php
-                            /*-php-*/
-                            ?>
+                        <div class="review-card">
+                            <h1 class="reviewer-name">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h1>
+
+                            <h4 class="review-text">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h4>
+
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <h1 class="reviewer-name">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h1>
+
+                            <h4 class="review-text">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h4>
+
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <h1 class="reviewer-name">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h1>
+
+                            <h4 class="review-text">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h4>
+
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <h1 class="reviewer-name">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h1>
+
+                            <h4 class="review-text">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h4>
+
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <h1 class="reviewer-name">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h1>
+
+                            <h4 class="review-text">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h4>
+
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="review-card">
-                        <div>
-                            <p class="reviewer-name">
+                    <div class="reviews-group" aria-hidden="true">
+                        <div class="review-card">
+                            <h1 class="reviewer-name">
                                 <?php
                                 /*-php-*/
                                 ?>
-                            </p>
-                            <p class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </p>
-                        </div>
-                        <div class="stars">
-                            <?php
-                            /*-php-*/
-                            ?>
-                        </div>
-                    </div>
+                            </h1>
 
-                    <div class="review-card">
-                        <div>
-                            <p class="reviewer-name">
+                            <h4 class="review-text">
                                 <?php
                                 /*-php-*/
                                 ?>
-                            </p>
-                            <p class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </p>
-                        </div>
-                        <div class="stars">
-                            <?php
-                            /*-php-*/
-                            ?>
-                        </div>
-                    </div>
+                            </h4>
 
-                    <div class="review-card">
-                        <div>
-                            <p class="reviewer-name">
+                            <div class="stars">
                                 <?php
                                 /*-php-*/
                                 ?>
-                            </p>
-                            <p class="review-text">
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <h1 class="reviewer-name">
                                 <?php
                                 /*-php-*/
                                 ?>
-                            </p>
-                        </div>
-                        <div class="stars">
-                            <?php
-                            /*-php-*/
-                            ?>
-                        </div>
-                    </div>
+                            </h1>
 
-                    <div class="review-card">
-                        <div>
-                            <p class="reviewer-name">
+                            <h4 class="review-text">
                                 <?php
                                 /*-php-*/
                                 ?>
-                            </p>
-                            <p class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </p>
-                        </div>
-                        <div class="stars">
-                            <?php
-                            /*-php-*/
-                            ?>
-                        </div>
-                    </div>
+                            </h4>
 
-                    <div class="review-card">
-                        <div>
-                            <p class="reviewer-name">
+                            <div class="stars">
                                 <?php
                                 /*-php-*/
                                 ?>
-                            </p>
-                            <p class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </p>
+                            </div>
                         </div>
-                        <div class="stars">
-                            <?php
-                            /*-php-*/
-                            ?>
+                        <div class="review-card">
+                            <h1 class="reviewer-name">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h1>
+
+                            <h4 class="review-text">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h4>
+
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <h1 class="reviewer-name">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h1>
+
+                            <h4 class="review-text">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h4>
+
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <h1 class="reviewer-name">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h1>
+
+                            <h4 class="review-text">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h4>
+
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <h1 class="reviewer-name">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h1>
+
+                            <h4 class="review-text">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </h4>
+
+                            <div class="stars">
+                                <?php
+                                /*-php-*/
+                                ?>
+                            </div>
                         </div>
                     </div>
 

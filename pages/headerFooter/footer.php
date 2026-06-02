@@ -2,7 +2,7 @@
 <header>
     <nav>
         <a href="#home" class="footerImage">
-            <img src="../../assets/img/SimpelTOL.png" alt="SimpleTOLLogo" height="120vh" width="230vw">
+            <img src="../../assets/img/SimpelTOL.png" alt="SimpleTOLLogo" height="110vh" width="240vw">
         </a>
         <div class="footerNav">
             <a href="#home">Home</a>
@@ -12,11 +12,11 @@
         </div>
         <div class="rules">
             <a href="#generalRules.php">
-                <h4>©General Rules</h4>
+                <h5 class="font-color-grey">©General Rules</h5>
             </a>
 
             <a href="#generalRules.php">
-                <h4>©Privacy Policy</h4>
+                <h5 class="font-color-grey">©Privacy Policy</h5>
             </a>
         </div>
     </nav>

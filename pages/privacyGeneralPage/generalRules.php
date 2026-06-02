@@ -21,9 +21,9 @@
                 <h1 class="font-style-italic">Terms & Conditions</h1>
             </div>
 
-            <div class="top-margin-20px bg-color-cream outline-purple-2px flex-column border-radius-20px terms-box">
+            <div class="top-margin-20px bg-color-cream outline-blue-2px flex-column border-radius-20px terms-box">
 
-                <div class="bg-color-light-purple flex-align-items-center border-radius-top-20px terms-header">
+                <div class="bg-color-light-blue flex-align-items-center border-radius-top-20px terms-header">
                     <h1 class="font-weight-light color-white terms-header-title">Terms & Conditions</h1>
                 </div>
 

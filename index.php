@@ -9,11 +9,7 @@
 
 <body>
 <?php
-// include("pages/homePage/home.php");
-// include("pages/contactPage/contact.php");
-// include("pages/privacyGeneralPage/privacyPolicy.php");
-// include("pages/privacyGeneralPage/generalRules.php");
-include("pages/adminPage/admin.php");
+include("pages/homePage/home.php");
 ?>
 </body>
 </html> 

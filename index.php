@@ -11,11 +11,8 @@
 <?php
 // include("pages/headerFooter/header.php");
 // include("pages/homePage/home.php");
-// include("pages/contactPage/contact.php");
+include("pages/contactPage/contact.php");
 // include("pages/adminPage/admin.php");
-// include("pages/privacyGeneralPage/generalRules.php");
-include("pages/privacyGeneralPage/privacyPolicy.php");
-// include("pages/bookPage/bookPageAccommodation.php");
 // include("pages/headerFooter/footer.php");
 ?>
 </body>

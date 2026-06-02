@@ -222,10 +222,18 @@
         <section class="aanbiedingpagina">
             <h1 class="aanbieding-text">Sale</h1>
 
-            <div class="aanbieding-box">
-            </div>
+            <div class="aanbiedingen">
+                <div class="aanbieding-box">
+                    <?php
+                    /*-php-*/
+                    ?>
+                </div>
 
-            <div class="aanbieding-box">
+                <div class="aanbieding-box">
+                    <?php
+                    /*-php-*/
+                    ?>
+                </div>
             </div>
         </section>
 

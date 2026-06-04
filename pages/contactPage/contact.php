@@ -16,7 +16,7 @@
     <!-- Section 1 Contact Form -->
     <section class="contact-section flex-justify-content-center top-margin-100px">
         <div class="contact-container">
-
+ 
             <div class="contact-title">
                 <h1 class="font-style-italic">Contact</h1>
             </div>

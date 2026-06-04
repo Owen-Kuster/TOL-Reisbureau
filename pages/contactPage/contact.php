@@ -21,9 +21,9 @@
                 <h1 class="font-style-italic">Contact</h1>
             </div>
 
-            <div class="top-margin-20px bg-color-cream outline-purple-2px flex-column border-radius-20px contact-box">
+            <div class="top-margin-20px bg-color-cream outline-blue-2pxs flex-column border-radius-20px contact-box">
 
-                <div class="bg-color-light-purple flex-align-items-center border-radius-top-20px contact-header">
+                <div class="bg-color-lightblue flex-align-items-center border-radius-top-20px contact-header">
                     <h1 class="font-weight-light color-white contact-header-title">Contact Us</h1>
                 </div>
 
@@ -39,7 +39,7 @@
                             </div>
                             <div class="flex-column contact-field">
                                 <p class="font-size-20px">Email</p>
-                                <input class="outline-purple-1px border-radius-5px contact-input" type="email" name="email" placeholder="Uw email"
+                                <input class="outline-purple-1px border-radius-5px contact-input" type="email" name="email" placeholder="Your email"
                                     <?php //fill php ?>>
                             </div>
                         </div>
@@ -52,20 +52,20 @@
                             </div>
                             <div class="flex-column contact-field">
                                 <p class="font-size-20px">Subject</p>
-                                <input class="outline-purple-1px border-radius-5px contact-input" type="text" name="onderwerp" placeholder="Onderwerp"
+                                <input class="outline-purple-1px border-radius-5px contact-input" type="text" name="onderwerp" placeholder="Subject"
                                     <?php //value php ?>>
                             </div>
                         </div>
 
                         <div class="flex-column contact-field-full">
-                            <p class="font-size-20px">Bericht</p>
-                            <textarea class="outline-purple-1px border-radius-5px contact-textarea" name="bericht" placeholder="Uw bericht">
+                            <p class="font-size-20px">Message</p>
+                            <textarea class="outline-purple-1px border-radius-5px contact-textarea" name="bericht" placeholder="Your message">
                                 <?php //fill php ?></textarea>
                         </div>
 
                         <div class="flex-row contact-bottom-row">
                             <div class="flex-align-items-center contact-actions">
-                                <button class="cursor-pointer font-weight-bold font-size-20px border-radius-5px bg-color-lightblue outline-purple-1px contact-btn-send">Verstuur</button>
+                                <button class="cursor-pointer font-weight-bold font-size-20px border-radius-5px bg-color-lightblue outline-purple-1px contact-btn-send">Send Message</button>
                             </div>
                         </div>
 
@@ -75,7 +75,10 @@
             </div>
 
         </div>
+        <div class="margin-100-bottom"></div>
     </section>
+
+    <footer><?php include(__DIR__ . "/../headerFooter/footer.php"); ?></footer>
 
 </body>
 

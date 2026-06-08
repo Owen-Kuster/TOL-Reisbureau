@@ -16,7 +16,7 @@
     <!-- Section 1 Contact Form -->
     <section class="contact-section flex-justify-content-center top-margin-100px">
         <div class="contact-container">
- 
+
             <div class="contact-title">
                 <h1 class="font-style-italic">Contact</h1>
             </div>
@@ -34,33 +34,32 @@
                         <div class="flex-row contact-row">
                             <div class="flex-column contact-field">
                                 <p class="font-size-20px">Name</p>
-                                <input class="outline-purple-1px border-radius-5px contact-input" type="text" name="naam" placeholder="Your name"
-                                    <?php //fill php ?>>
+                                <input class="outline-purple-1px border-radius-5px contact-input" type="text" name="name" placeholder="Your name"
+                                    <?php //fill php 
+                                    ?>>
                             </div>
                             <div class="flex-column contact-field">
                                 <p class="font-size-20px">Email</p>
                                 <input class="outline-purple-1px border-radius-5px contact-input" type="email" name="email" placeholder="Your email"
-                                    <?php //fill php ?>>
+                                    <?php //fill php 
+                                    ?>>
                             </div>
                         </div>
 
                         <div class="flex-row contact-row">
                             <div class="flex-column contact-field">
-                                <p class="font-size-20px">Phone Number</p>
-                                <input class="outline-purple-1px border-radius-5px contact-input" type="tel" name="telefoon" placeholder="Your phone number"
-                                    <?php //value php ?>>
-                            </div>
-                            <div class="flex-column contact-field">
                                 <p class="font-size-20px">Subject</p>
-                                <input class="outline-purple-1px border-radius-5px contact-input" type="text" name="onderwerp" placeholder="Subject"
-                                    <?php //value php ?>>
+                                <input class="outline-purple-1px border-radius-5px contact-input" type="text" name="subject" placeholder="Subject"
+                                    <?php //value php 
+                                    ?>>
                             </div>
                         </div>
 
                         <div class="flex-column contact-field-full">
                             <p class="font-size-20px">Message</p>
-                            <textarea class="outline-purple-1px border-radius-5px contact-textarea" name="bericht" placeholder="Your message">
-                                <?php //fill php ?></textarea>
+                            <textarea class="outline-purple-1px border-radius-5px contact-textarea" name="message" placeholder="Your message">
+                                <?php //fill php 
+                                ?></textarea>
                         </div>
 
                         <div class="flex-row contact-bottom-row">

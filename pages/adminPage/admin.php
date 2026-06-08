@@ -1,5 +1,9 @@
-<?php include (__DIR__ . "/../../dbcalls/connection/connection.php"); ?>
-<?php include (__DIR__ . "/../../dbcalls/crud/Read/read.php"); ?>
+<?php 
+include(__DIR__ . "/../../dbcalls/connection/connection.php");
+include(__DIR__ . "/../../dbcalls/crud/Read/read.php"); 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,30 +38,32 @@
                         <div class="flex-row recieving-message-area">
 
                             <?php
-                                // foreach
+                            foreach ($contact as $message) {
+                                ?>
+                                <!-- Messages -->
+                                <div
+                                    class="bg-color-blue outline-purple-2px border-radius-10px flex-column justify-content-space-between message-recieving-box">
+                                    <div class="flex-column msg-fields">
+                                        <div class="color-222 font-size-20px font-weight-bold msg-field">NAME:
+                                            <?php echo $message['ContactName']; ?>
+                                        </div>
+                                        <div class="color-222 font-size-20px font-weight-bold msg-field">SUBJECT:
+                                            <?php echo $message['ContactSubject']; ?>
+                                        </div>
+                                        <div class="color-222 font-size-20px font-weight-bold msg-field">EMAIL:
+                                            <?php echo $message['ContactEmail']; ?>
+                                        </div>
+                                        <div class="color-333 font-size-20px font-weight-normal msg-body">
+                                            <?php echo $message['ContactMessage']; ?>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="cursor-pointer flex-text-align-center font-weight-bold font-size-20px border-radius-20px outline-purple-2px bg-color-white color-red btn-delete">DELETE</button>
+                                </div>
+                                <?php
+                            }
                             ?>
 
-                            <!-- Messages -->
-                            <div
-                                class="bg-color-blue outline-purple-2px border-radius-10px flex-column justify-content-space-between message-recieving-box">
-                                <div class="flex-column msg-fields">
-                                    <div class="color-222 font-size-20px font-weight-bold msg-field">NAME
-                                        <?php //fill php ?>
-                                    </div>
-                                    <div class="color-222 font-size-20px font-weight-bold msg-field">SUBJECT
-                                        <?php //fill php ?>
-                                    </div>
-                                    <div class="color-222 font-size-20px font-weight-bold msg-field">EMAIL
-                                        <?php //fill php ?>
-                                    </div>
-                                    <div class="color-333 font-size-20px font-weight-normal msg-body">
-                                        <?php //fill php ?>
-                                    </div>
-                                </div>
-                                <button
-                                    class="cursor-pointer flex-text-align-center font-weight-bold font-size-20px border-radius-20px outline-purple-2px bg-color-white color-red btn-delete">DELETE</button>
-                            </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -209,7 +215,9 @@
                             </div>
                             <div
                                 class="flex-align-items-center justify-content-space-between admin-add-flights-actions">
-                                <div><button class="cursor-pointer font-weight-bold font-size-20px border-radius-5px bg-color-lightblue outline-purple-1px admin-add-flights-btn-update">Add Flight</button></div>
+                                <div><button
+                                        class="cursor-pointer font-weight-bold font-size-20px border-radius-5px bg-color-lightblue outline-purple-1px admin-add-flights-btn-update">Add
+                                        Flight</button></div>
                             </div>
                         </div>
 
@@ -239,7 +247,8 @@
                         <?php //foreach ?>
 
                         <div class="flex-column flex-justify-content-center admin-booked-flights-field">
-                            <div class="bg-color-white outline-purple-1px flex-justify-content-center border-radius-5px admin-booked-flights-box">
+                            <div
+                                class="bg-color-white outline-purple-1px flex-justify-content-center border-radius-5px admin-booked-flights-box">
                                 <div class="flex-row flex-justify-content-center booked-flight-details-box">
 
                                     <div class="booked-account-name details-box">
@@ -267,7 +276,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -295,7 +304,7 @@
 
                         <div class="flex-column flex-justify-content-center admin-all-flights-field">
                             <div class="bg-color-white outline-purple-1px border-radius-5px admin-all-flights-box">
-                               <div class="flex-row flex-justify-content-center all-flight-details-box">
+                                <div class="flex-row flex-justify-content-center all-flight-details-box">
 
                                     <div class="all-account-name all-details-box">
                                         <?php //fill with php ?>
@@ -322,7 +331,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
 
                     </div>
                 </div>

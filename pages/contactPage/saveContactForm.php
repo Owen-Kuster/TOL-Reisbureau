@@ -1,14 +1,14 @@
 <?php
-include '../TOL-Reisbureau/dbcalls/connection/connection.php';
+include (__DIR__ . "/../../dbcalls/connection/connection.php");
 
-    $sql = "INSERT INTO contact (contactName, contactEmail, contactSubject, contactMessage) 
-            VALUES (:name, :email, :subject, :message)";
+    $sql = "INSERT INTO contact (ContactName, ContactEmail, ContactSubject, ContactMessage) 
+            VALUES (:ContactName, :ContactEmail, :ContactSubject, :ContactMessage)";
 
     $stmt = $conn->prepare($sql);
-    $stmt->bindParam(":email", $_POST['contactName']);    
-    $stmt->bindParam(":email", $_POST['contactEmail']);
-    $stmt->bindParam(":subject", $_POST['contactSubject']);
-    $stmt->bindParam(":message", $_POST['contactMessage']);
+    $stmt->bindParam(":ContactName", $_POST['ContactName']);    
+    $stmt->bindParam(":ContactEmail", $_POST['ContactEmail']);
+    $stmt->bindParam(":ContactSubject", $_POST['ContactSubject']);
+    $stmt->bindParam(":ContactMessage", $_POST['ContactMessage']);
     $stmt->execute();
 
 ?>

@@ -1,3 +1,5 @@
+<?php include (__DIR__ . "/../../dbcalls/connection/connection.php"); ?>
+<?php include (__DIR__ . "/../../dbcalls/crud/Read/read.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 

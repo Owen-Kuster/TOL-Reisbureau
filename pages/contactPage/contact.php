@@ -29,18 +29,18 @@
 
                 <div class="flex-column contact-inner">
 
-                    <form action="" method="POST" id="contact-form">
+                    <form action="saveContactForm.php" method="POST" id="contact-form">
 
                         <div class="flex-row contact-row">
                             <div class="flex-column contact-field">
                                 <p class="font-size-20px">Name</p>
-                                <input class="outline-purple-1px border-radius-5px contact-input" type="text" name="name" placeholder="Your name"
+                                <input class="outline-purple-1px border-radius-5px contact-input" type="text" name="ContactName" placeholder="Your name"
                                     <?php //fill php 
                                     ?>>
                             </div>
                             <div class="flex-column contact-field">
                                 <p class="font-size-20px">Email</p>
-                                <input class="outline-purple-1px border-radius-5px contact-input" type="email" name="email" placeholder="Your email"
+                                <input class="outline-purple-1px border-radius-5px contact-input" type="email" name="ContactEmail" placeholder="Your email"
                                     <?php //fill php 
                                     ?>>
                             </div>
@@ -49,7 +49,7 @@
                         <div class="flex-row contact-row">
                             <div class="flex-column contact-field">
                                 <p class="font-size-20px">Subject</p>
-                                <input class="outline-purple-1px border-radius-5px contact-input" type="text" name="subject" placeholder="Subject"
+                                <input class="outline-purple-1px border-radius-5px contact-input" type="text" name="ContactSubject" placeholder="Subject"
                                     <?php //value php 
                                     ?>>
                             </div>
@@ -57,7 +57,7 @@
 
                         <div class="flex-column contact-field-full">
                             <p class="font-size-20px">Message</p>
-                            <textarea class="outline-purple-1px border-radius-5px contact-textarea" name="message" placeholder="Your message">
+                            <textarea class="outline-purple-1px border-radius-5px contact-textarea" name="ContactMessage" placeholder="Your message">
                                 <?php //fill php 
                                 ?></textarea>
                         </div>

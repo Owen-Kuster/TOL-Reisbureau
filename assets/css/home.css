@@ -73,7 +73,7 @@
   align-items: center;
   height: 48px;
   padding: 0 24px;
-  background-color: #a2ecff;
+  background-color: #bfe8f3;
   border-radius: 30px;
   border: 2px solid #4e148c;
   cursor: pointer;
@@ -110,7 +110,7 @@
 
 .reviews-section::after {
   right: 0;
-  background: linear-gradient(to left, #fff 10%, transparent); 
+  background: linear-gradient(to left, #fff 10%, transparent);
 }
 
 .reviews-track {
@@ -122,13 +122,14 @@
 .reviews-group {
   display: flex;
   gap: 24px;
-  padding-right: 24px; 
+  padding-right: 24px;
 }
 
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -165,7 +166,7 @@
   margin-top: 18px;
 }
 
-/* .star {
+.star {
   font-size: 22px;
   color: #1a1a2e;
 }
@@ -173,7 +174,7 @@
 .star.empty {
   color: transparent;
   -webkit-text-stroke: 1.5px #1a1a2e;
-} */
+}
 
 .write-review-row {
   text-align: right;
@@ -194,10 +195,12 @@
 
 .aanbiedingpagina {
   width: 100%;
-  height: 400px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
 }
 
-.aanbiedingen {
+.aanbiedingen-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -207,15 +210,17 @@
 
 .aanbieding-text {
   display: flex;
-  justify-self: center;
+  justify-content: center;
   font-size: 3vw;
+  margin-bottom: 2vh;
 }
 
 .aanbieding-box {
-  width: 40%;
-  height: 10vh;
+  width: 45%;
+  height: 25vh;
+  border-radius: 20px;
   display: flex;
   flex-direction: row;
   outline: 2px #2d1f6e solid;
-  background-color: #a2ecff;
+  background-color: #bfe8f3;
 }

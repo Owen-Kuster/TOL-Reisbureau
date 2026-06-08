@@ -84,6 +84,10 @@ header{scroll-behavior: smooth;}
     line-height: 1.6;
     flex-grow: 1;
     padding-top: 4px;
+    width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
 }
  
 /** DELETE knop **/

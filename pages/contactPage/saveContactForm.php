@@ -1,5 +1,5 @@
 <?php
-include 'connection.php';
+include '../TOL-Reisbureau/dbcalls/connection/connection.php';
 
     $sql = "INSERT INTO contact (contactName, contactEmail, contactSubject, contactMessage) 
             VALUES (:name, :email, :subject, :message)";

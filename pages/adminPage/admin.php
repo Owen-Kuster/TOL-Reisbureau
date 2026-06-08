@@ -1,3 +1,5 @@
+<?php include (__DIR__ . "/../../dbcalls/connection/connection.php"); ?>
+<?php include (__DIR__ . "/../../dbcalls/crud/Read/read.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +25,7 @@
                 class="bg-color-blue outline-purple-3px border-radius-5px flex-justify-content-center flex-column messagebox-outer-shell">
 
                 <div class="flex-align-self-center messagebox-title">
-                    <h1 class="font-style-italic">Berichten Box</h1>
+                    <h1 class="font-style-italic">Message Box</h1>
                 </div>
 
                 <div
@@ -46,9 +48,6 @@
                                         <?php //fill php ?>
                                     </div>
                                     <div class="color-222 font-size-20px font-weight-bold msg-field">EMAIL
-                                        <?php //fill php ?>
-                                    </div>
-                                    <div class="color-222 font-size-20px font-weight-bold msg-field">TEL
                                         <?php //fill php ?>
                                     </div>
                                     <div class="color-333 font-size-20px font-weight-normal msg-body">
@@ -84,9 +83,9 @@
 
                     <form action="" method="POST" id="manage-flights">
 
-                        <p class="font-weight-bold font-size-20px">Kies een vlucht</p>
+                        <p class="font-weight-bold font-size-20px">Choose a flight</p>
                         <select class="outline-purple-1px border-radius-5px admin-manage-flights-select-full">
-                            <option value="">Selecteer een vlucht</option>
+                            <option value="">Select a flight</option>
                             <?php //fill with php ?>
                         </select>
 

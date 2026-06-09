@@ -11,4 +11,6 @@ include (__DIR__ . "/../../dbcalls/connection/connection.php");
     $stmt->bindParam(":ContactMessage", $_POST['ContactMessage']);
     $stmt->execute();
 
+    header("Location: ./contact.php");
+
 ?>

@@ -1,3 +1,8 @@
+<?php
+include("dbcalls/connection/connection.php");
+include("dbcalls/crud/Read/read.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -93,122 +98,31 @@
                 <div class="reviews-track">
 
                     <div class="reviews-group">
-                        <div class="review-card">
+                        <?php
+                        foreach ($review as $reviewMessage) {
+                            ?>
+                            <div class="review-card">
 
-                            <h1 class="reviewer-name">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h1>
+                                <h1 class="reviewer-name">
+                                    <?php
+                                    echo $reviewMessage['ReviewName'];
+                                    ?>
+                                </h1>
 
-                            <h4 class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h4>
+                                <h4 class="review-text">
+                                    <?php
+                                    /*-php-*/
+                                    ?>
+                                </h4>
 
-                            <div class="stars">
-                                <?php
-                                /*-php-*/
-                                ?>
+                                <div class="stars">
+
+                                </div>
+
                             </div>
-
-                        </div>
-                        <div class="review-card">
-                            <h1 class="reviewer-name">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h1>
-
-                            <h4 class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h4>
-
-                            <div class="stars">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </div>
-                        </div>
-                        <div class="review-card">
-                            <h1 class="reviewer-name">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h1>
-
-                            <h4 class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h4>
-
-                            <div class="stars">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </div>
-                        </div>
-                        <div class="review-card">
-                            <h1 class="reviewer-name">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h1>
-
-                            <h4 class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h4>
-
-                            <div class="stars">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </div>
-                        </div>
-                        <div class="review-card">
-                            <h1 class="reviewer-name">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h1>
-
-                            <h4 class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h4>
-
-                            <div class="stars">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </div>
-                        </div>
-                        <div class="review-card">
-                            <h1 class="reviewer-name">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h1>
-
-                            <h4 class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h4>
-
-                            <div class="stars">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </div>
-                        </div>
+                            <?php
+                        }
+                        ?>
                     </div>
 
                     <div class="reviews-group" aria-hidden="true">
@@ -339,7 +253,7 @@
         <section class="aanbiedingpagina">
             <h1 class="aanbieding-text">Sale</h1>
 
-            <div class="aanbiedingen">
+            <div class="aanbiedingen-row">
                 <div class="aanbieding-box">
                     <?php
                     /*-php-*/
@@ -351,6 +265,24 @@
                     /*-php-*/
                     ?>
                 </div>
+            </div>
+
+            <div class="aanbiedingen-row">
+                <div class="aanbieding-box">
+                    <?php
+                    /*-php-*/
+                    ?>
+                </div>
+
+                <div class="aanbieding-box">
+                    <?php
+                    /*-php-*/
+                    ?>
+                </div>
+            </div>
+
+            <div class="write-review-row">
+                <a href="#hotels">See all hotels</a>
             </div>
         </section>
 

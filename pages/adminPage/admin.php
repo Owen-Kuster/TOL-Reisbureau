@@ -1,6 +1,6 @@
-<?php 
+<?php
 include(__DIR__ . "/../../dbcalls/connection/connection.php");
-include(__DIR__ . "/../../dbcalls/crud/Read/read.php"); 
+include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
 ?>
 
 
@@ -40,7 +40,6 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
                             <?php
                             foreach ($contact as $message) {
                                 ?>
-                                <!-- Messages -->
                                 <div
                                     class="bg-color-blue outline-purple-2px border-radius-10px flex-column justify-content-space-between message-recieving-box">
                                     <div class="flex-column msg-fields">
@@ -57,12 +56,15 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
                                             <?php echo $message['ContactMessage']; ?>
                                         </div>
                                     </div>
-                                    <button
-                                        class="cursor-pointer flex-text-align-center font-weight-bold font-size-20px border-radius-20px outline-purple-2px bg-color-white color-red btn-delete">DELETE</button>
+                                    <div class="flex-justify-content-center btn-delete-box">
+                                        <a href="/dbcalls/crud/Delete/delete.php?ContactID=<?php echo $message['ContactID']; ?>"
+                                            class="cursor-pointer flex-text-align-center font-weight-bold font-size-20px border-radius-20px outline-purple-2px bg-color-white color-red btn-delete">
+                                            DELETE
+                                        </a>
+                                    </div>
                                 </div>
-                                <?php
-                            }
-                            ?>
+
+                            <?php } ?>
 
                         </div>
                     </div>
@@ -170,19 +172,27 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
 
                 <div class="flex-column admin-add-flights-inner">
 
-                    <form action="" method="POST" id="add-flights">
+                    <form action="../../dbcalls/crud/Create/create.php" method="POST" id="add-flights">
                         <div class="flex-row admin-add-flights-row">
                             <div class="flex-column admin-add-flights-field">
                                 <p class="font-size-20px">Departure</p>
-                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
-                                    <option value=""></option>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select" name="departure" id="add-departure">
+                                    <option value="">Choose a departure</option>
+                                    <option value="Barcelona">Barcelona</option>
+                                    <option value="Athens">Athens</option>
+                                    <option value="Nice">Nice</option>
+                                    <option value="Amsterdam">Amsterdam</option>
                                     <?php //fill with php ?>
                                 </select>
                             </div>
                             <div class="flex-column admin-add-flights-field">
                                 <p class="font-size-20px">Destination</p>
-                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
-                                    <option value=""></option>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select" name="destination" id="add-destination">
+                                    <option value="">Choose a destination</option>
+                                    <option value="Barcelona">Barcelona</option>
+                                    <option value="Athens">Athens</option>
+                                    <option value="Nice">Nice</option>
+                                    <option value="Amsterdam">Amsterdam</option>
                                     <?php //fill with php ?>
                                 </select>
                             </div>
@@ -190,16 +200,29 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
 
                         <div class="flex-row admin-add-flights-row">
                             <div class="flex-column admin-add-flights-field">
-                                <p class="font-size-20px">Departure Date</p>
-                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
-                                    <option value=""></option>
+                                <p class="font-size-20px">Departure Time</p>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select" name="departure_time" id="add-departure-time">
+                                    <option value="">Choose a departure time</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="20:00">20:00</option>
                                     <?php //fill with php ?>
                                 </select>
                             </div>
+                            
                             <div class="flex-column admin-add-flights-field">
-                                <p class="font-size-20px">Price</p>
-                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
-                                    <option value=""></option>
+                                <p class="font-size-20px">Arrival Time</p>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select" name="arrival_time" id="add-arrival-time">
+                                    <option value="">Choose an arrival time</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="20:00">20:00</option>
                                     <?php //fill with php ?>
                                 </select>
                             </div>
@@ -208,9 +231,24 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
                         <div class="flex-row admin-add-flights-bottom-row">
                             <div class="flex-column admin-add-flights-field">
                                 <p class="font-size-20px">People</p>
-                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
-                                    <option value=""></option>
-                                    <?php //fill with php ?>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select" name="people" id="add-people">
+                                    <option value="">Choose number of people</option>
+                                    <option value="100">100</option>
+                                    <option value="125">125</option>
+                                    <option value="150">150</option>
+                                    <option value="175">175</option>
+                                    <option value="200">200</option>
+                                </select>
+                            </div>
+                            <div class="flex-column admin-add-flights-field">
+                                <p class="font-size-20px">Price</p>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select" name="price" id="add-price">
+                                    <option value="">Choose a price per ticket</option>
+                                    <option value="100">€100</option>
+                                    <option value="125">€125</option>
+                                    <option value="150">€150</option>
+                                    <option value="175">€175</option>
+                                    <option value="200">€200</option>
                                 </select>
                             </div>
                             <div
@@ -251,25 +289,25 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
                                 class="bg-color-white outline-purple-1px flex-justify-content-center border-radius-5px admin-booked-flights-box">
                                 <div class="flex-row flex-justify-content-center booked-flight-details-box">
 
-                                    <div class="booked-account-name details-box">
+                                    <div class="flex-justify-content-center booked-account-name details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="booked-hotel-yesno details-box">
+                                    <div class="flex-justify-content-center booked-hotel-yesno details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="booked-departure details-box">
+                                    <div class="flex-justify-content-center booked-departure details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="booked-destination details-box">
+                                    <div class="flex-justify-content-center booked-destination details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="booked-people details-box">
+                                    <div class="flex-justify-content-center booked-people details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="booked-departure-date details-box">
+                                    <div class="flex-justify-content-center booked-departure-date details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="booked-return-date details-box">
+                                    <div class="flex-justify-content-center booked-return-date details-box">
                                         <?php //fill with php ?>
                                     </div>
 
@@ -306,25 +344,25 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
                             <div class="bg-color-white outline-purple-1px border-radius-5px admin-all-flights-box">
                                 <div class="flex-row flex-justify-content-center all-flight-details-box">
 
-                                    <div class="all-account-name all-details-box">
+                                    <div class="flex-justify-content-center all-account-name all-details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="all-hotel-yesno all-details-box">
+                                    <div class="flex-justify-content-center all-hotel-yesno all-details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="all-departure all-details-box">
+                                    <div class="flex-justify-content-center all-departure all-details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="all-destination all-details-box">
+                                    <div class="flex-justify-content-center all-destination all-details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="all-people all-details-box">
+                                    <div class="flex-justify-content-center all-people all-details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="all-departure-date all-details-box">
+                                    <div class="flex-justify-content-center all-departure-date all-details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="all-return-date all-details-box">
+                                    <div class="flex-justify-content-center all-return-date all-details-box">
                                         <?php //fill with php ?>
                                     </div>
 

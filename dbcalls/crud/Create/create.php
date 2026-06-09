@@ -2,26 +2,27 @@
 
 include(__DIR__ . '/../../connection/connection.php');
 
-$naam = $_POST["naam"];
-$prijs = $_POST["prijs"];
-$categorie = $_POST["categorie"];
-$allergenen = $_POST["allergenen"];
-$beschrijving = $_POST["beschrijving"];
-$afbeeldingen = $_POST["afbeeldingen"];
+$departure = $_POST["departure"];
+$destination = $_POST["destination"];
+$departure_time = $_POST["departure_time"];
+$arrival_time = $_POST["arrival_time"];
+$price = $_POST["price"];
+$people = $_POST["people"];
+
 
 //variabel met een SQL query
-$sql = "INSERT INTO menukaart(naam, prijs, categorie, allergenen, beschrijving, afbeeldingen) VALUES (:naam, :prijs, :categorie, :allergenen, :beschrijving, :afbeeldingen)";
+$sql = "INSERT INTO flights(FlightDeparture, FlightDestination, FlightAvailableSeats, FlightDepartureTime, FlightArrivalTime, FlightPrice) VALUES (:FlightDeparture, :FlightDestination, :FlightAvailableSeats, :FlightDepartureTime, :FlightArrivalTime, :FlightPrice)";
 
 $stmt = $conn->prepare($sql);
 
-$stmt->bindParam(':naam', $naam);
-$stmt->bindParam(':prijs', $prijs);
-$stmt->bindParam(':categorie', $categorie);
-$stmt->bindParam(':allergenen', $allergenen);
-$stmt->bindParam(':beschrijving', $beschrijving);
-$stmt->bindParam(':afbeeldingen', $afbeeldingen);
+$stmt->bindParam(':FlightDeparture', $departure);
+$stmt->bindParam(':FlightDestination', $destination);
+$stmt->bindParam(':FlightAvailableSeats', $people);
+$stmt->bindParam(':FlightDepartureTime', $departure_time);
+$stmt->bindParam(':FlightArrivalTime', $arrival_time);
+$stmt->bindParam(':FlightPrice', $price);
 
 //execute on db
 $stmt->execute();
 
-Header("Location: ../login/admin.php");
+header("Location: /pages/adminPage/admin.php");

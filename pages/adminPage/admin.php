@@ -172,19 +172,27 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
 
                 <div class="flex-column admin-add-flights-inner">
 
-                    <form action="" method="POST" id="add-flights">
+                    <form action="../../dbcalls/crud/Create/create.php" method="POST" id="add-flights">
                         <div class="flex-row admin-add-flights-row">
                             <div class="flex-column admin-add-flights-field">
                                 <p class="font-size-20px">Departure</p>
-                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
-                                    <option value=""></option>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select" name="departure" id="add-departure">
+                                    <option value="">Choose a departure</option>
+                                    <option value="Barcelona">Barcelona</option>
+                                    <option value="Athens">Athens</option>
+                                    <option value="Nice">Nice</option>
+                                    <option value="Amsterdam">Amsterdam</option>
                                     <?php //fill with php ?>
                                 </select>
                             </div>
                             <div class="flex-column admin-add-flights-field">
                                 <p class="font-size-20px">Destination</p>
-                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
-                                    <option value=""></option>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select" name="destination" id="add-destination">
+                                    <option value="">Choose a destination</option>
+                                    <option value="Barcelona">Barcelona</option>
+                                    <option value="Athens">Athens</option>
+                                    <option value="Nice">Nice</option>
+                                    <option value="Amsterdam">Amsterdam</option>
                                     <?php //fill with php ?>
                                 </select>
                             </div>
@@ -192,16 +200,29 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
 
                         <div class="flex-row admin-add-flights-row">
                             <div class="flex-column admin-add-flights-field">
-                                <p class="font-size-20px">Departure Date</p>
-                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
-                                    <option value=""></option>
+                                <p class="font-size-20px">Departure Time</p>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select" name="departure_time" id="add-departure-time">
+                                    <option value="">Choose a departure time</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="20:00">20:00</option>
                                     <?php //fill with php ?>
                                 </select>
                             </div>
+                            
                             <div class="flex-column admin-add-flights-field">
-                                <p class="font-size-20px">Price</p>
-                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
-                                    <option value=""></option>
+                                <p class="font-size-20px">Arrival Time</p>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select" name="arrival_time" id="add-arrival-time">
+                                    <option value="">Choose an arrival time</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="20:00">20:00</option>
                                     <?php //fill with php ?>
                                 </select>
                             </div>
@@ -210,9 +231,24 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
                         <div class="flex-row admin-add-flights-bottom-row">
                             <div class="flex-column admin-add-flights-field">
                                 <p class="font-size-20px">People</p>
-                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select">
-                                    <option value=""></option>
-                                    <?php //fill with php ?>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select" name="people" id="add-people">
+                                    <option value="">Choose number of people</option>
+                                    <option value="100">100</option>
+                                    <option value="125">125</option>
+                                    <option value="150">150</option>
+                                    <option value="175">175</option>
+                                    <option value="200">200</option>
+                                </select>
+                            </div>
+                            <div class="flex-column admin-add-flights-field">
+                                <p class="font-size-20px">Price</p>
+                                <select class="outline-purple-1px border-radius-5px admin-add-flights-select" name="price" id="add-price">
+                                    <option value="">Choose a price per ticket</option>
+                                    <option value="100">€100</option>
+                                    <option value="125">€125</option>
+                                    <option value="150">€150</option>
+                                    <option value="175">€175</option>
+                                    <option value="200">€200</option>
                                 </select>
                             </div>
                             <div

@@ -1,6 +1,6 @@
-<?php 
+<?php
 include(__DIR__ . "/../../dbcalls/connection/connection.php");
-include(__DIR__ . "/../../dbcalls/crud/Read/read.php"); 
+include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
 ?>
 
 
@@ -40,7 +40,6 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
                             <?php
                             foreach ($contact as $message) {
                                 ?>
-                                <!-- Messages -->
                                 <div
                                     class="bg-color-blue outline-purple-2px border-radius-10px flex-column justify-content-space-between message-recieving-box">
                                     <div class="flex-column msg-fields">
@@ -57,12 +56,15 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
                                             <?php echo $message['ContactMessage']; ?>
                                         </div>
                                     </div>
-                                    <button
-                                        class="cursor-pointer flex-text-align-center font-weight-bold font-size-20px border-radius-20px outline-purple-2px bg-color-white color-red btn-delete">DELETE</button>
+                                    <div class="flex-justify-content-center btn-delete-box">
+                                        <a href="/dbcalls/crud/Delete/delete.php?ContactID=<?php echo $message['ContactID']; ?>"
+                                            class="cursor-pointer flex-text-align-center font-weight-bold font-size-20px border-radius-20px outline-purple-2px bg-color-white color-red btn-delete">
+                                            DELETE
+                                        </a>
+                                    </div>
                                 </div>
-                                <?php
-                            }
-                            ?>
+
+                            <?php } ?>
 
                         </div>
                     </div>
@@ -251,25 +253,25 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
                                 class="bg-color-white outline-purple-1px flex-justify-content-center border-radius-5px admin-booked-flights-box">
                                 <div class="flex-row flex-justify-content-center booked-flight-details-box">
 
-                                    <div class="booked-account-name details-box">
+                                    <div class="flex-justify-content-center booked-account-name details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="booked-hotel-yesno details-box">
+                                    <div class="flex-justify-content-center booked-hotel-yesno details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="booked-departure details-box">
+                                    <div class="flex-justify-content-center booked-departure details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="booked-destination details-box">
+                                    <div class="flex-justify-content-center booked-destination details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="booked-people details-box">
+                                    <div class="flex-justify-content-center booked-people details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="booked-departure-date details-box">
+                                    <div class="flex-justify-content-center booked-departure-date details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="booked-return-date details-box">
+                                    <div class="flex-justify-content-center booked-return-date details-box">
                                         <?php //fill with php ?>
                                     </div>
 
@@ -306,25 +308,25 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
                             <div class="bg-color-white outline-purple-1px border-radius-5px admin-all-flights-box">
                                 <div class="flex-row flex-justify-content-center all-flight-details-box">
 
-                                    <div class="all-account-name all-details-box">
+                                    <div class="flex-justify-content-center all-account-name all-details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="all-hotel-yesno all-details-box">
+                                    <div class="flex-justify-content-center all-hotel-yesno all-details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="all-departure all-details-box">
+                                    <div class="flex-justify-content-center all-departure all-details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="all-destination all-details-box">
+                                    <div class="flex-justify-content-center all-destination all-details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="all-people all-details-box">
+                                    <div class="flex-justify-content-center all-people all-details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="all-departure-date all-details-box">
+                                    <div class="flex-justify-content-center all-departure-date all-details-box">
                                         <?php //fill with php ?>
                                     </div>
-                                    <div class="all-return-date all-details-box">
+                                    <div class="flex-justify-content-center all-return-date all-details-box">
                                         <?php //fill with php ?>
                                     </div>
 

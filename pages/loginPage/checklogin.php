@@ -13,10 +13,10 @@ $stmt->execute();
 
 $user = $stmt->fetch();
 
-if ($role == "admin") {
+if ($user['Role'] == 'admin') {
     $_SESSION["loggedinAdmin"] = true;
     header("location: ../../pages/adminPage/admin.php");
-} else if ($role == "user") {
+} else if ($user['Role'] == 'user') {
      $_SESSION["loggedin"] = true;
  
     header("location: ../../index.php");

@@ -111,135 +111,22 @@ include("dbcalls/crud/Read/read.php");
 
                                 <h4 class="review-text">
                                     <?php
-                                    /*-php-*/
+                                    echo $reviewMessage['ReviewMessage'];
                                     ?>
                                 </h4>
 
                                 <div class="stars">
-
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
                                 </div>
 
                             </div>
                             <?php
                         }
                         ?>
-                    </div>
-
-                    <div class="reviews-group" aria-hidden="true">
-                        <div class="review-card">
-                            <h1 class="reviewer-name">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h1>
-
-                            <h4 class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h4>
-
-                            <div class="stars">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </div>
-                        </div>
-                        <div class="review-card">
-                            <h1 class="reviewer-name">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h1>
-
-                            <h4 class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h4>
-
-                            <div class="stars">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </div>
-                        </div>
-                        <div class="review-card">
-                            <h1 class="reviewer-name">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h1>
-
-                            <h4 class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h4>
-
-                            <div class="stars">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </div>
-                        </div>
-                        <div class="review-card">
-                            <h1 class="reviewer-name">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h1>
-
-                            <h4 class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h4>
-
-                            <div class="stars">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </div>
-                        </div>
-                        <div class="review-card">
-                            <h1 class="reviewer-name">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h1>
-
-                            <h4 class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h4>
-
-                            <div class="stars">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </div>
-                        </div>
-                        <div class="review-card">
-                            <h1 class="reviewer-name">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h1>
-
-                            <h4 class="review-text">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </h4>
-
-                            <div class="stars">
-                                <?php
-                                /*-php-*/
-                                ?>
-                            </div>
-                        </div>
                     </div>
 
                 </div>
@@ -255,29 +142,21 @@ include("dbcalls/crud/Read/read.php");
 
             <div class="aanbiedingen-row">
                 <div class="aanbieding-box">
-                    <?php
-                    /*-php-*/
-                    ?>
+                    
                 </div>
 
                 <div class="aanbieding-box">
-                    <?php
-                    /*-php-*/
-                    ?>
+                    
                 </div>
             </div>
 
             <div class="aanbiedingen-row">
                 <div class="aanbieding-box">
-                    <?php
-                    /*-php-*/
-                    ?>
+                    
                 </div>
 
                 <div class="aanbieding-box">
-                    <?php
-                    /*-php-*/
-                    ?>
+                    
                 </div>
             </div>
 

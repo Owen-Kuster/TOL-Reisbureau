@@ -1,6 +1,10 @@
 <?php
 include(__DIR__ . "/../../dbcalls/connection/connection.php");
 include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
+
+if (!isset($_SESSION["loggedinAdmin"]) || $_SESSION["loggedinAdmin"] !== true) {
+    header("location: ../../pages/loginPage/login.php");
+}
 ?>
 
 

@@ -91,8 +91,14 @@ header{scroll-behavior: smooth;}
 }
  
 /** DELETE knop **/
+.btn-delete-box{
+    width: 100%;
+    height: 10vh;
+}
+
 .btn-delete {
     width: 60%;
+    align-self: center;
     margin: 14px auto 0 auto;
     padding: 8px 0;
     letter-spacing: 3px;

@@ -20,26 +20,23 @@
                 <h1>Register</h1>
             </div>
             <div class="total-form">
-                <form action="#" method="POST">
-                    <div class="inputdiv">
-                        <label for=""></label>
-                        <input class="form" type="text" placeholder="Username">
-                    </div>
-                    <div class="inputdiv">
-                        <label for=""></label>
-                        <input class="form" type="text" placeholder="Email">
-                    </div>
-                    <div class="inputdiv">
-                        <label for=""></label>
-                        <input class="form" type="password" placeholder="Password">
-                    </div>
-                </form>
-            </div>
-            <div class="buttons">
-                <button class="button">Register</button>
-                <a class="a" href="./passwordReset.php">Password reset</a>
-                <a class="a" href="./login.php">Login</a>
-            </div>
+                <div class="total-form">
+    <form action="../../dbcalls/crud/Create/registerDB.php" method="POST">
+        <div class="inputdiv">
+            <label for=""></label>
+            <input class="form" type="text" name="username" placeholder="Username">
+        </div>
+        <div class="inputdiv">
+            <label for=""></label>
+            <input class="form" type="password" name="password" placeholder="Password">
+        </div>
+        <div class="buttons">
+            <button class="button" type="submit">Register</button>
+            <a class="a" href="../passwordReset.php">Password reset</a>
+            <a class="a" href="../login.php">Login</a>
+        </div>
+    </form>
+</div>
         </div>
     </section>
 </body>

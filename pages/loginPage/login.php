@@ -23,11 +23,11 @@
                 <form action="#" method="POST">
                     <div class="inputdiv" >
                         <label for=""></label>
-                        <input class="form" type="text" placeholder="Username">
+                        <input name="username" class="form" type="text" placeholder="Username">
                     </div>
                     <div class="inputdiv">
                         <label for=""></label>
-                        <input class="form" type="password" placeholder="Password">
+                        <input name="password" class="form" type="password" placeholder="Password">
                     </div>
                 </form>
             </div>

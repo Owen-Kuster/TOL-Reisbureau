@@ -1,6 +1,9 @@
 <?php
 include(__DIR__ . "/../../dbcalls/connection/connection.php");
 include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
+
+session_start();
+if ($_SESSION['role'] == 'admin'){
 ?>
 
 
@@ -495,3 +498,8 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
 </body>
 
 </html>
+<?php
+}
+else{
+    header ('location: ../homePage/home.php');
+}

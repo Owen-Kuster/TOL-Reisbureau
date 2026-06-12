@@ -1,6 +1,6 @@
 <?php
-include("dbcalls/connection/connection.php");
-include("dbcalls/crud/Read/read.php");
+include(__DIR__ . "/../../dbcalls/connection/connection.php");
+// include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
 ?>
 
 <!DOCTYPE html>

@@ -106,7 +106,7 @@ if (!isset($_SESSION["loggedinAdmin"]) || $_SESSION["loggedinAdmin"] !== true) {
                             <?php foreach ($flights as $flight) { ?>
                                 <!-- Per vlucht een optie aanmaken -->
                                 <!-- value="FlightID" is wat er wordt opgeslagen als je deze optie kiest -->
-                                <!-- data-* attributen zijn extra informatie die je via JavaScript kunt uitlezen -->
+                                <!-- data attributen zijn extra informatie die je via JavaScript kunt uitlezen -->
                                 <option value="<?php echo $flight['FlightID'] ?>"
                                     data-departure="<?php echo $flight['FlightDeparture'] ?>"
                                     data-destination="<?php echo $flight['FlightDestination'] ?>"

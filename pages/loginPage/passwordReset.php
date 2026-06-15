@@ -20,21 +20,21 @@
                 <h1>Password reset</h1>
             </div>
             <div class="total-form">
-                <form action="#" method="POST">
-                    <div class="inputdiv" >
-                        <label for=""></label>
-                        <input class="form" type="text" placeholder="Username">
+                <form action="../../dbcalls/crud/Update/updatePassword.php" method="POST">
+                    <div class="inputdiv">
+                        <label for="username"></label>
+                        <input class="form" type="text" id="username" name="Username" placeholder="Username">
                     </div>
                     <div class="inputdiv">
-                        <label for=""></label>
-                        <input class="form" type="password" placeholder="New Password">
+                        <label for="password"></label>
+                        <input class="form" type="password" id="password" name="Password" placeholder="New Password">
+                    </div>
+                    <div class="buttons">
+                        <button class="button" type="submit">Reset password</button>
+                        <a class="a" href="./login.php">Login</a>
+                        <a class="a" href="./register.php">Register</a>
                     </div>
                 </form>
-            </div>
-            <div class="buttons">
-                <button class="button">Reset password</button>
-                <a class="a" href="./login.php">Login</a>
-                <a class="a" href="./register.php">Register</a>
             </div>
         </div>
     </section>

@@ -1,6 +1,6 @@
 <?php
-include("../dbcalls/connection/connection.php");
-include("../dbcalls/crud/Read/read.php");
+include(__DIR__ . "/../../dbcalls/connection/connection.php");
+include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
 ?>
 
 <!DOCTYPE html>
@@ -31,18 +31,7 @@ include("../dbcalls/crud/Read/read.php");
                             <label>City...</label>
                             <option value="">
                                 <?php
-                                ?>
-                            </option>
-                            <option value="">
-                                <?php
-                                ?>
-                            </option>
-                            <option value="">
-                                <?php
-                                ?>
-                            </option>
-                            <option value="">
-                                <?php
+                                echo $FlightDeparture['$FlightDeparture'];
                                 ?>
                             </option>
                         </select>

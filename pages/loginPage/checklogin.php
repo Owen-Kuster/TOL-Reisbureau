@@ -13,14 +13,9 @@ $stmt->execute();
 
 $user = $stmt->fetch();
 
-var_dump($user);
 
-
-if ($role == "admin") {
-     $_SESSION["loggedinAdmin"] = true;
-     header("location: ../../pages/adminPage/admin.php");
- } else if ($role == "user") {
-      $_SESSION["loggedin"] = true;
- 
-     header("location: ../../index.php");
- }
+if (isset($user)) {
+    $_SESSION['role'] = $user['Role'];
+    $_SESSION['username'] = $user['Username'];
+    header ('location: ../adminPage/admin.php');
+    }

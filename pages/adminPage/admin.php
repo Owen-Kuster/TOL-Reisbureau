@@ -1,9 +1,11 @@
 <?php
+session_start();
 include(__DIR__ . "/../../dbcalls/connection/connection.php");
 include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
 
-session_start();
-if ($_SESSION['role'] == 'admin'){
+if (!isset($_SESSION["loggedinAdmin"]) || $_SESSION["loggedinAdmin"] !== true) {
+    header("location: ../../index.php");
+}
 ?>
 
 
@@ -498,8 +500,3 @@ if ($_SESSION['role'] == 'admin'){
 </body>
 
 </html>
-<?php
-}
-else{
-    header ('location: ../homePage/home.php');
-}

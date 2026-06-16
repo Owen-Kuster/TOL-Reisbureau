@@ -3,7 +3,7 @@
 $host = "db";
 $username = "user";
 $password = "password";
-$dbname = "tol-reisbureau";
+$dbname = "tol_reisbureau";
 
 try{
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);

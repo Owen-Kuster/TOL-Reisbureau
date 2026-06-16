@@ -14,7 +14,7 @@
         </a>
         <div class="fs-1-3vw flex-justify-content-end logoutButtonBox">
             <div class="logoutButtonPlacement flex-align-items-center">
-                <button class="logoutButton bg-color-blue"><a href="../../index.php">Logout</a></button>
+                <button class="logoutButton bg-color-blue"><a href="../../dbcalls/login/sessions/sessionLogout.php">Logout</a></button>
             </div>
         </div>
     </nav>

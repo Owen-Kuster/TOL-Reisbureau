@@ -29,6 +29,10 @@ nav a {
     font-size: 1.3vw;
 }
 
+nav a:hover{
+    color: #2d1f6e;
+}
+
 .headerImage {
     margin-left: 4vw;
     width: 10%;

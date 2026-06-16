@@ -32,8 +32,8 @@
         </div>
         <div class="buttons">
             <button class="button" type="submit">Register</button>
-            <a class="a" href="../passwordReset.php">Password reset</a>
-            <a class="a" href="../login.php">Login</a>
+            <a class="a" href="passwordReset.php">Password reset</a>
+            <a class="a" href="login.php">Login</a>
         </div>
     </form>
 </div>

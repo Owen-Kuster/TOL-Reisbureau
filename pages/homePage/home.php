@@ -1,8 +1,6 @@
 <?php
 include(__DIR__ . "/../../dbcalls/connection/connection.php");
-// include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
-
-session_start();
+include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
 ?>
 
 <!DOCTYPE html>

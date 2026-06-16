@@ -13,12 +13,9 @@ $stmt->execute();
 
 $user = $stmt->fetch();
 
-// var_dump($user);
-
 
 if (isset($user)) {
     $_SESSION['role'] = $user['Role'];
     $_SESSION['username'] = $user['Username'];
-    header ('location: ../adminPage/admin.php');}
-// } else if () {
-// } 
+    header ('location: ../adminPage/admin.php');
+    }

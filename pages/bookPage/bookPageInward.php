@@ -1,3 +1,7 @@
+<?php
+session_start();
+if ($_SESSION['role'] == 'user'){
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -108,3 +112,6 @@
 </body>
 
 </html>
+<?php 
+}
+?>

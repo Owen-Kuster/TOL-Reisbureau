@@ -46,18 +46,7 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
                             <label>City...</label>
                             <option value="">
                                 <?php
-                                ?>
-                            </option>
-                            <option value="">
-                                <?php
-                                ?>
-                            </option>
-                            <option value="">
-                                <?php
-                                ?>
-                            </option>
-                            <option value="">
-                                <?php
+                                echo $FlightDestination['$FlightDestination'];
                                 ?>
                             </option>
                         </select>
@@ -79,6 +68,9 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
                     <div class="field-input">
                         <img src="../../assets/img/calender.png" alt="" height="20px" width="20px">
                         <input type="text" name="departure_date" placeholder="dd/mm/yyyy">
+                        <?php
+                        echo $FlightDepartureTime ['$FlightDepartureTime'];
+                        ?>
                     </div>
                 </div>
 
@@ -87,6 +79,9 @@ include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
                     <div class="field-input">
                         <img src="../../assets/img/calender.png" alt="" height="20px" width="20px">
                         <input type="text" name="return_date" placeholder="dd/mm/yyyy">
+                        <?php
+                        echo $FlightArrivalTime['$FlightArrivalTime'];
+                        ?>
                     </div>
                 </div>
 

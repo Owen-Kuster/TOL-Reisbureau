@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['role'] == 'user'){
+if ($_SESSION['loggedin'] == true){
 ?>
 <!DOCTYPE html>
 <html lang="en">

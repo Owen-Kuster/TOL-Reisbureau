@@ -10,8 +10,11 @@
             <a href="../../pages/aboutUsPage/aboutUs.php">About us</a>
             <a href="../../pages/contactPage/contact.php">Contact</a>
         </div>
-        <a class="headerProfile" href="../loginPage/login.php">
-            <img src="../../assets/img/ProfilePictureNoLogin.png" alt="profilePicture" height="30vh" width="80vw">
-        </a>
+        <div class="headerProfile">
+            <a href="../../pages/loginPage/login.php">
+                <img src="../../assets/img/ProfilePictureNoLogin.png" alt="profilePicture" height="30vh" width="80vw">
+            </a>
+            <a href="../../dbcalls/login/sessions/sessionLogout.php" class="logoutBtn">Logout</a>
+        </div>
     </nav>
 </header>

@@ -52,3 +52,25 @@ nav a:hover{
     align-content: center;
     justify-content: center;
 }
+
+.headerProfile {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.logoutBtn {
+    font-size: 1vw;
+    padding: 0.4vw 0.9vw;
+    border: 2px solid #2d1f6e;
+    border-radius: 6px;
+    color: #2d1f6e;
+    text-decoration: none;
+}
+
+.logoutBtn:hover {
+    background-color: #2d1f6e;
+    color: #fff;
+}

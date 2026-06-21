@@ -3,6 +3,7 @@ session_start();
 include(__DIR__ . "/../../dbcalls/connection/connection.php");
 include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
 
+// isset checks if a variable exists and is not empty
 if (!isset($_SESSION["loggedinAdmin"]) || $_SESSION["loggedinAdmin"] !== true) {
     header("location: ../../index.php");
 }
@@ -108,6 +109,7 @@ if (!isset($_SESSION["loggedinAdmin"]) || $_SESSION["loggedinAdmin"] !== true) {
                                 <!-- Per vlucht een optie aanmaken -->
                                 <!-- value="FlightID" is wat er wordt opgeslagen als je deze optie kiest -->
                                 <!-- data attributen zijn extra informatie die je via JavaScript kunt uitlezen -->
+                                <!-- data- gebruik je om gegevens op te slaan -->
                                 <option value="<?php echo $flight['FlightID'] ?>"
                                     data-departure="<?php echo $flight['FlightDeparture'] ?>"
                                     data-destination="<?php echo $flight['FlightDestination'] ?>"
@@ -230,6 +232,8 @@ if (!isset($_SESSION["loggedinAdmin"]) || $_SESSION["loggedinAdmin"] !== true) {
             var option = select.options[select.selectedIndex];
 
             //fill form based on selected option's data attributes
+            //option.value de value van het gekozen veld bijv 2 ID
+            //dataset is een verzameling van alle data- attributen
             document.getElementById('manage-flight-id').value = option.value;
             document.getElementById('manage-departure').value = option.dataset.departure;
             document.getElementById('manage-destination').value = option.dataset.destination;

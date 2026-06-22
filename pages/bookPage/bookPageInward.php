@@ -1,4 +1,6 @@
 <?php
+include(__DIR__ . "/../../dbcalls/connection/connection.php");
+include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
 session_start();
 if ($_SESSION['loggedin'] == true){
 ?>
@@ -74,6 +76,11 @@ if ($_SESSION['loggedin'] == true){
                 </div>
             </form>
         </div>
+<?php
+
+foreach ($flights as $allflight){
+
+?>
 
         <!-- Vlucht kaart -->
         <div class="placeholder">
@@ -82,9 +89,6 @@ if ($_SESSION['loggedin'] == true){
                     <div class="flight-icon">
                         <img src="../../img/Outward-Inward/departure.png" alt="departure">
                     </div>
-                    <div class="flight-duration">
-                        <span>0lh 45m <!-- php fill --></span>
-                    </div>
                     <div class="flight-icon">
                         <img src="../../img/Outward-Inward/arrival.png" alt="arrival">
                     </div>
@@ -92,22 +96,25 @@ if ($_SESSION['loggedin'] == true){
 
                 <div class="bubble011 times-row">
                     <div class="flight-point">
-                        <div class="time">06:45 <!-- php fill --></div>
-                        <div class="place">AMS <!-- php fill --></div>
+                        <div class="time"><?php echo $allflight['FlightDepartureTime'] ?></div>
+                        <div class="place"><?php echo $allflight['FlightDeparture'] ?></div>
                     </div>
                     <div class="flight-point right">
-                        <div class="time">08:30 <!-- php fill --></div>
-                        <div class="place">BCN <!-- php fill --></div>
+                        <div class="time"><?php echo $allflight['FlightArrivalTime'] ?></div>
+                        <div class="place"><?php echo $allflight['FlightDestination'] ?></div>
                     </div>
                 </div>
             </div>
 
             <div class="bookNow">
                 <a href="#" class="bookBtn">BOOK HERE</a>
-                <div class="seats">150 plaatsen over <!-- php fill --></div>
+                <div class="seats"><?php echo $allflight['FlightAvailableSeats'] ?></div>
             </div>
         </div>
 
+<?php
+}
+?>
     </section>
 </body>
 

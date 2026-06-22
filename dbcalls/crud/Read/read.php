@@ -3,6 +3,7 @@
 //contact
 $stmt = $conn->query("SELECT * FROM contact");
 $contact = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// PDO = sleutelnaam van databse
 
 //flights
 $stmt = $conn->query("SELECT * FROM flights");

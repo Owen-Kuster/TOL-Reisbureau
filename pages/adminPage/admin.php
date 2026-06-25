@@ -4,7 +4,7 @@ include(__DIR__ . "/../../dbcalls/connection/connection.php");
 include(__DIR__ . "/../../dbcalls/crud/Read/read.php");
 
 // isset checks if a variable exists and is not empty
-if (!isset($_SESSION["loggedinAdmin"]) || $_SESSION["loggedinAdmin"] !== true) {
+if (!isset($_SESSION["loggedinAdmin"]) || $_SESSION["loggedinAdmin"] != true) {
     header("location: ../../index.php");
 }
 ?>
@@ -23,8 +23,6 @@ if (!isset($_SESSION["loggedinAdmin"]) || $_SESSION["loggedinAdmin"] !== true) {
 <body>
     <header>
         <?php
-        // DIR for now until admin is seperate page
-        // REMOVE when admin is seperate page
         include(__DIR__ . "/../headerFooter/headerAdmin.php"); ?>
     </header>
 
@@ -229,6 +227,8 @@ if (!isset($_SESSION["loggedinAdmin"]) || $_SESSION["loggedinAdmin"] !== true) {
     <script>
         //funtion die de manage form vult op basis van de geselecteerde vlucht in de dropdown
         function fillManageForm(select) {
+            // select.selectedIndex geeft het nummer terug van de optie die je hebt geselecteerd in de dropdown.
+            // Daarna kunnen de data- attributen het eruit lezen zoals option.dataset.departure.
             var option = select.options[select.selectedIndex];
 
             //fill form based on selected option's data attributes
